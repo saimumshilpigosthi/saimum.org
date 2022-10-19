@@ -1,0 +1,163 @@
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* .navbar .nav-item .nav-link {
+        padding: 28px 20px;
+    } */
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* `xs` returns only a ruleset and no media query */
+/* ... { ... } */
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 479px) {
+    .single_slider {
+        margin: 0;
+    }
+    .header_bottom .logo{
+        height: 30px;
+    }
+    .search_box .search {
+        max-width: 108px;
+    }
+    .d_none_custom_logo{
+        display: none !important;
+    }
+
+}
+@media (max-width: 575.98px) {
+    .offcanvas-header {
+        padding: 0 1rem;
+    }
+    .banner_simple_slider .overlay_pos {
+        display: none !important;
+    }
+    
+    
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .header_bottom{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999;
+        background: var(--BgWhitePrimary);
+    }
+    .banner_area{
+        margin-top: 60px;
+    }
+    .d_none_custom {
+        display: none !important;
+    }
+    .d_block_custom{
+        display: block !important;
+    }
+    .search_box .search {
+        transition: 0s linear;
+    }
+
+    .logo_hide {
+        width: 0%;
+        transition: .9s linear;
+    }
+
+    .offcanvas-header {
+        padding: 0 1rem;
+    }
+    .navbar .nav-item .nav-link {
+        padding: 28px 15px !important;
+        font-size: 15px !important;
+    }
+    .dropdown-item {
+        font-size: 15px !important;
+    }
+    
+
+    .banner_text p {
+        font-size: 16px;
+    }
+    .text_center_sm {
+        text-align: center;
+    }
+    .sm_none {
+        display: none !important;
+    }
+
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .navbar .nav-item .nav-link {
+        padding: 28px 15px !important;
+        font-size: 11px;
+    }
+    .navbar.submenu .nav-item .nav-link {
+        padding: 10px 20px !important;
+    }
+    .dropdown-item {
+        font-size: 11px;
+    }
+
+    .banner_text h1 {
+        font-size: 60px;
+    }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .navbar .nav-item .nav-link {
+        padding: 28px 20px;
+    }
+    .dropdown-menu .dropdown-item {
+        padding: 13px 20px;
+    }
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+
+}
+

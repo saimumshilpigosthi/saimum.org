@@ -1,0 +1,22 @@
+.body_left,
+.body_right{
+    min-width: 300px;
+    max-width: 300px;
+}
+
+
+
+.header_shortcut{
+    width: 40px;
+    height: 40px;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    border: 1px solid var(--ColorBlackSecondary);
+}
+.header_shortcut:hover{
+    background: var(--BgBlackSecondary);
+}
