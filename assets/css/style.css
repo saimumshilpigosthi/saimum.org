@@ -18,14 +18,24 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    /* overflow: hidden; */
-    border: 1px solid var(--ColorBlackSecondary);
+    transition: .3s ease;
 }
 .header_shortcut:hover{
-    background: var(--BgBlackSecondary);
+    /* background: var(--BgWhiteSecondary); */
+    border: 1px solid var(--ColorBlackSecondary);
+    /* transform: rotate(360deg); */
+}
+.header_shortcut svg{
+    transition: .5s ease;
+}
+.header_shortcut:hover svg{
+    transform: rotate(360deg);
 }
 .search_btn{
     border: 1px solid #ced4da !important;
+}
+body.dark .search_btn{
+    background: var(--BgBlackSecondary);
 }
 
 /* HEADER CSS END  */
@@ -49,12 +59,22 @@
     padding: 7px 10px;
     position: relative;
     white-space: nowrap;
+    color: var(--ColorBlackSecondary);
 }
-/* .navbar .nav-item .nav-link::before{
+.navbar .nav-item .nav-link.active{
+    color: var(--ColorPrimary);
+}
+body.dark .navbar .nav-item .nav-link.active:hover{
+    color: var(--ColorPrimary);
+}
+body.dark .navbar .nav-item .nav-link:focus{
+    color: var(--ColorWhitePrimary);
+}
+.navbar .nav-item .nav-link::before{
     position: absolute;
     content: '';
     left: 0;
-    top: 0;
+    bottom: 0;
     width: 0%;
     height: 2px;
     background: var(--ColorPrimary);
@@ -67,12 +87,35 @@
     opacity: 1;
     visibility: visible;
     width: 100%;
-} */
+}
+body.dark .navbar .nav-item .nav-link:hover{
+    color: var(--ColorWhitePrimary);
+}
 
+
+.dropdown-menu {
+    box-shadow: 0px 3px 3px rgba(78, 78, 78, 0.5);
+    border: none;
+    /* min-width: 200px !important; */
+    width: auto !important;
+    margin-top: 0px !important;
+    border-radius: 5px !important;
+    overflow: hidden;
+    /* background: var(--BgWhiteSecondary); */
+    transition: .3s linear;
+}
+body.dark .dropdown-menu {
+    background: var(--BgBlackPrimary);
+}
 .dropdown-menu .dropdown-item{
-    text-transform: uppercase;
-    padding: 13px 30px;
+    text-transform: capitalize;
+    padding: 7px 10px;
     position: relative;
+    color: var(--ColorWhiteSecondary) !important;
+}
+.dropdown-menu .dropdown-item:hover{
+    background: var(--ColorPrimary);
+    color: var(--ColorWhitePrimary) !important;
 }
 /* .dropdown-menu .dropdown-item::before {
     position: absolute;
@@ -116,13 +159,7 @@
     width: 100%;
 } */
 
-.dropdown-menu {
-    border: none;
-    /* min-width: 200px !important; */
-    width: auto !important;
-    margin-top: 0 !important;
-    border-radius: 0 !important;
-}
+
 
 .dropdown-item {
     /* white-space: pre-wrap !important; */

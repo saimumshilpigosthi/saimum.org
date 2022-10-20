@@ -18,13 +18,13 @@
     --ColorBlackSecondary: #909393;
 
     /* background colors  */
-    --BgBlackPrimary: #101010;
-    --BgBlackSecondary: #bababa;
+    --BgBlackPrimary: #121212;
+    --BgBlackSecondary: #222222;
     --BgWhitePrimary: #FFFFFF;
-    --BgWhiteSecondary: #EEEEEE;
+    --BgWhiteSecondary: #e6e6e6;
 
     /* theme colors  */
-    --ColorPrimary: #8D691D;
+    --ColorPrimary: #FF790E;
     --ColorPrimaryAlpha: rgba(141, 106, 29, 0.6);
     --ColorSecondary: #23232D;
 
@@ -105,6 +105,44 @@ body {
     /* overflow-x: hidden; */
     position: relative; /* for double submenu. to make them sticky one after another */
 }
+
+
+/* DAY NIGHT MODE SWITCHER START  */
+
+
+body.dark {
+  background-color: var(--BgBlackSecondary);
+  color: var(--ColorWhitePrimary);
+}
+.dark {
+  -webkit-transition: background-color 800ms ease;
+  transition: background-color 800ms ease;
+}
+body.dark svg {
+  color: var(--ColorWhitePrimary);
+}
+body.dark header,
+body.dark nav {
+  background-color: var(--BgBlackPrimary);
+  
+}
+header,
+nav {
+  background-color: var(--BgWhitePrimary);
+  /* -webkit-transition: background-color 800ms ease;
+  transition: background-color 800ms ease; */
+  transition: .3s linear;
+}
+
+body.dark .form-control{
+    background-color: var(--BgBlackSecondary);
+    color: var(--ColorWhitePrimary);
+}
+
+
+/* DAY NIGHT MODE SWITCHER END  */
+
+
 
 
 h1,

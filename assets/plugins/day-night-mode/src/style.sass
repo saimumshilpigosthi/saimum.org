@@ -1,0 +1,85 @@
+//- To see the process of how I made this dark mode toggle, watch this tutorial video:
+//- https://youtu.be/42gltu11wb8
+
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700")
+
+body
+  font-family: Raleway, sans-serif
+  font-size: 18px
+  line-height: 1.7
+  background:
+    color: #eaeaea
+  color: #333
+  transition: background-color 800ms ease
+  
+  &.dark
+    background:
+      color: #222
+    color: #eaeaea
+    
+    .masthead,
+    .footer
+      background:
+        color: #121212
+        
+    img
+      // filter: saturate(50%)
+      filter: brightness(70%)
+    
+h2
+  font-size: 3rem
+  line-height: 1.2
+
+img
+  width: 100%
+  
+  &.small
+    width: 60%
+    float: right
+    padding: 1rem
+  
+.masthead,
+.footer
+  padding: 0 1rem
+  background:
+    color: #ddd
+    
+  transition: background-color 800ms ease
+
+.masthead-inner,
+.footer-inner
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 900px
+  margin: auto
+  
+.nav
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+
+button
+  border: 1px solid #333
+  padding: .5rem
+  background: #333
+  border-radius: 5px
+  transition: background 200ms ease
+  color: #eaeaea
+  
+  &:hover
+    background: rgba(#333, 0.8)
+    
+
+.dark-button
+  i
+    transform: rotate(35deg)
+    margin-left: .3rem
+      
+      
+main
+  padding: 1rem
+  max-width: 900px
+  margin: auto
