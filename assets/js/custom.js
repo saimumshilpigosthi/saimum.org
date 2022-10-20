@@ -5,21 +5,67 @@ $(window).on('load', function () {
 });
 //Preloader js Ends
 
+// DAY NIGHT MODE JS START 
+var darkMode;
+
+if (localStorage.getItem('dark-mode')) {
+    // if dark mode is in storage, set variable with that value
+    darkMode = localStorage.getItem('dark-mode');
+} else {
+    // if dark mode is not in storage, set variable to 'light'
+    darkMode = 'light';
+}
+
+// set new localStorage value
+localStorage.setItem('dark-mode', darkMode);
+
+
+if (localStorage.getItem('dark-mode') == 'dark') {
+    // if the above is 'dark' then apply .dark to the body
+    $('body').addClass('dark');
+    // hide the 'dark' button
+    $('.dark-button').hide();
+    // show the 'light' button
+    $('.light-button').show();
+} else {
+    $('.light-button').hide();
+}
+
+// Toggle dark UI
+
+$('.dark-button').on('click', function () {
+    $('.dark-button').hide();
+    $('.light-button').show();
+    $('body').addClass('dark');
+    // set stored value to 'dark'
+    localStorage.setItem('dark-mode', 'dark');
+});
+
+$('.light-button').on('click', function () {
+    $('.light-button').hide();
+    $('.dark-button').show();
+    $('body').removeClass('dark');
+    // set stored value to 'light'
+    localStorage.setItem('dark-mode', 'light');
+});
+// DAY NIGHT MODE JS END 
+
+
 // Header JS Start 
 $(function () {
     // alert("ok");
 });
 // Header JS Ends
 
-$(document).ready(function(){
-  // alert("ok");
+$(document).ready(function () {
+    // alert("ok");
 
 
-// banner_simple_slider Start 
+    // banner_simple_slider Start 
     $('.banner_simple_slider_wrap').slick({
-        arrows: false,
-        // prevArrow: ".banner_simple_slider .left_btn",
-        // nextArrow: ".banner_simple_slider .right_btn",
+        arrows: true,
+        prevArrow: ".banner_simple_slider .left_btn",
+        nextArrow: ".banner_simple_slider .right_btn",
         dots: false,
         infinite: true,
         speed: 300,
@@ -30,9 +76,9 @@ $(document).ready(function(){
         // adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 5000,
-        fade: false,
+        fade: true,
         cssEase: 'linear',
-        vertical:true,
+        // vertical: true,
         // focusOnSelect: true,
         // responsive: [
         //     {
@@ -60,7 +106,7 @@ $(document).ready(function(){
         //     }
         // ]
     });
-// banner_simple_slider End
+    // banner_simple_slider End
 
-        
+
 });
