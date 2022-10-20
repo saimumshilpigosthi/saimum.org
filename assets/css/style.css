@@ -21,13 +21,14 @@
     transition: .3s ease;
 }
 .header_shortcut:hover{
-    border: 1px solid var(--ColorBlackSecondary);
+    /* border: 1px solid var(--ColorBlackSecondary); */
 }
 .header_shortcut svg{
     transition: .5s ease;
 }
 .header_shortcut:hover svg{
     transform: rotate(360deg);
+    color: var(--ColorPrimary);
 }
 .search_btn{
     border: 1px solid #ced4da !important;
@@ -116,11 +117,7 @@ body.dark .dropdown-menu {
 
 /* BANNER CSS START  */
 
-.banner_simple_slider .overlay_pos {
-    width: 100%;
-}
-
-.banner_simple_slider .border-top,
+/* .banner_simple_slider .border-top,
 .banner_simple_slider .description {
     border-top: 2px solid var(--ColorWhitePrimary);
     width: 190px;
@@ -130,20 +127,19 @@ body.dark .dropdown-menu {
     color: var(--ColorPrimary);
 }
 .banner_simple_slider .border-center h1 {
-    color: #fff;
+    color: var(--ColorPrimary);
     font-size: 55px;
     text-transform: uppercase;
     margin: 50px 0px;
     line-height: 80px;
-    /* text-shadow: 1px 1px 3px #474747; */
     font-weight: 900;
     text-shadow: 3px 0px 10px #000;
-}
+} */
 .left_btn,
 .right_btn {
     position: absolute;
     top: 50%;
-    z-index: 9999;
+    z-index: 9;
     transform: translateY(-50%);
     transition: .3s linear;
     color: var(--ColorWhitePrimary);
@@ -161,7 +157,7 @@ body.dark .dropdown-menu {
     right: 2%;
 }
 
-.banner_text h1 {
+/* .banner_text h1 {
     color: var(--ColorWhitePrimary);
     font-size: 130px;
     font-weight: 400;
@@ -172,8 +168,7 @@ body.dark .dropdown-menu {
     color: var(--ColorWhitePrimary);
     font-size: 20px;
     line-height: 40px;
-    /* background: red; */
-}
+} */
 
 .banner_btn {
     color: var(--ColorWhitePrimary);

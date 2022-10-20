@@ -74,7 +74,7 @@ $(document).ready(function () {
         // centerMode: true,
         // variableWidth: true,
         // adaptiveHeight: true,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
         fade: true,
         cssEase: 'linear',
