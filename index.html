@@ -67,7 +67,7 @@
         <header class="header_area" style="position: sticky; top: 0; z-index: 99;">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-auto body_left pr-0">
+                    <div class="col-auto body_left p-0">
                         <a class="logo" style="height: 50px;" href="index.html">
                             <!-- <img src="assets/images/logo/logo.png" alt="" class="h-100 p-2"> -->
                             <img src="https://saimum.org/wp-content/uploads/2021/10/cropped-logo.png" alt=""
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto body_right pl-0 d-flex justify-content-between align-items-center">
+                    <div class="col-auto body_right p-0 d-flex justify-content-between align-items-center">
                         <div class="header_shortcut position-relative">
                             <!-- <i class="far fa-bookmark"></i> -->
                             <i class="fas fa-bookmark"></i>
@@ -123,7 +123,7 @@
                         <div class="header_shortcut dropdown" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                             <div class="image_holder d-flex align-items-center justify-content-center border-1 rounded-circle overflow-hidden"
-                                type="button" data-bs-toggle="dropdown" aria-expanded="falsej">
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="https://scontent.fdac136-1.fna.fbcdn.net/v/t1.6435-9/72444861_2406440429597572_6522974919305723904_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGzU_S2QdIrk8s70pD6162wpv1TCp-u692m_VMKn67r3djulXK9951Zd5zLxBWcW4FzQxlnAykjH0qVug8jxiVv&_nc_ohc=JykC1St-rOAAX8sruZr&_nc_ht=scontent.fdac136-1.fna&oh=00_AT_WeRtzl7duK0JyKum8eGOi5w8w8vqCPu6YbABfYiWxGg&oe=637533A5"
                                     alt="" class="w-100">
                             </div>
@@ -144,11 +144,18 @@
 
         <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
 
-        <div class="offcanvas offcanvas-end" data-bs-scroll="false" tabindex="-1" id="offcanvasWithBothOptions"
-            aria-labelledby="offcanvasWithBothOptionsLabel" style="max-widthl: 300px;">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Ataur Rahman</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas offcanvas-end bg-transparent" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header p-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col p-0">
+                            <div class="content d-flex justify-content-between flex-fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Ataur Rahman</h5> -->
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
             </div>
             <div class="offcanvas-body">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore beatae distinctio exercitationem
@@ -445,6 +452,36 @@
                 </div>
             </div>
         </section>
+
+
+
+
+
+        <div class="toggle_side_panel">
+            <div class="full_overlay"></div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    <nav class="side_menu">
+        <ul>
+            
+        </ul>
+    </nav>
+    
+
+
+    <button class="nav_btn">
+        <i class="fa fa-bars"></i>
+    </button>
+
 
         <!-- <section class="banner_area p-0">
     <div class="banner_simple_slider position-relative">

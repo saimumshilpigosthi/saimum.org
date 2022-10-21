@@ -109,4 +109,34 @@ $(document).ready(function () {
     // banner_simple_slider End
 
 
+// OFFCANVUS  RIGHT PANEL JS START 
+
+    $(".header_shortcut").click(function() {
+        var header_shortcut = $(".header_area .body_right").html();
+        $(".offcanvas-header .content").html(header_shortcut);
+        
+        // $(".header_area .header_shortcut").toggleClass("d-none");
+
+        var body_padding = $("body").css('padding-right');
+        $(".offcanvas-header .content").css("padding-right", body_padding);
+
+        var header_right_width = $("header .body_right").width();
+
+        var string = body_padding;
+        var body_padding = string.match(/\d/g);
+        var body_padding_number = body_padding.join("");
+
+        var offcanvus_width = Number(header_right_width) + Number(body_padding_number);
+
+        $(".offcanvas").width(offcanvus_width);
+    });
+
+    // OFFCANVUS RIGHT PANEL JS END
+
+
+    
+
+
+
+
 });
