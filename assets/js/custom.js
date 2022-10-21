@@ -115,7 +115,7 @@ $(document).ready(function () {
         var header_shortcut = $(".header_area .body_right").html();
         $(".offcanvas-header .content").html(header_shortcut);
         
-        // $(".header_area .header_shortcut").toggleClass("d-none");
+        // $(".header_area .header_shortcut").toggleClass("body_right");
 
         var body_padding = $("body").css('padding-right');
         $(".offcanvas-header .content").css("padding-right", body_padding);

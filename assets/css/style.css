@@ -1,5 +1,6 @@
 .offcanvas-backdrop{
     z-index: 9;
+    background: transparent;
 }
 .offcanvas{
     backdrop-filter: blur(10px);
@@ -8,7 +9,9 @@
 
 
 /* HEADER CSS START  */
-
+.search_bar{
+    padding: 5px 0;
+}
 .search_actions{
     width: 100px;
 }
