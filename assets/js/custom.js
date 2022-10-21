@@ -111,7 +111,13 @@ $(document).ready(function () {
 
 // OFFCANVUS  RIGHT PANEL JS START 
 
+    // $('.header_shortcut svg').on('click', function () {
+    //     $('.header_shortcut svg').removeClass('ColorPrimary');
+    //     $(this).addClass('ColorPrimary');
+    // });
+
     $(".header_shortcut").click(function() {
+
         var header_shortcut = $(".header_area .body_right").html();
         $(".offcanvas-header .content").html(header_shortcut);
         
@@ -119,7 +125,8 @@ $(document).ready(function () {
 
         var body_padding = $("body").css('padding-right');
         $(".offcanvas-header .content").css("padding-right", body_padding);
-
+        $(".day_night_switcher").css("padding-right", body_padding);
+        
         var header_right_width = $("header .body_right").width();
 
         var string = body_padding;
@@ -129,6 +136,8 @@ $(document).ready(function () {
         var offcanvus_width = Number(header_right_width) + Number(body_padding_number);
 
         $(".offcanvas").width(offcanvus_width);
+        
+        // alert(body_padding);
     });
 
     // OFFCANVUS RIGHT PANEL JS END

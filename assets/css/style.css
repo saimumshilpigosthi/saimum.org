@@ -6,6 +6,26 @@
     backdrop-filter: blur(10px);
 }
 
+.offcanvas-header{
+    transition: .3s linear;
+}
+body.dark .offcanvas-header{
+    background: var(--BgBlackPrimary) !important;
+}
+
+.day_night_switcher{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.day_night_switcher button i,
+.day_night_switcher button span {
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 7px 10px !important;
+	/* position: relative; */
+	color: var(--ColorBlackSecondary);
+}
+
 
 
 /* HEADER CSS START  */

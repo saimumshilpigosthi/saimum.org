@@ -396,8 +396,7 @@ svg, i{
 
 .body_left,
 .body_right{
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 275px;
 }
 
 
