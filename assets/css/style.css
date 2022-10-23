@@ -36,8 +36,12 @@
 .offcanvas {
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
-	background: rgba(255, 255, 255, 0.3) !important;
+	background: rgba(255, 255, 255, 0.6) !important;
+    transition: .3s linear;
 }
+body.dark .offcanvas{
+    background: rgba(0, 0, 0, 0.6) !important;
+    }
 
 .offcanvas-header{
     transition: .3s linear;
@@ -94,6 +98,9 @@ body.dark .sub_content button span{
 .search_actions{
     width: 100px;
 }
+.search_icon_mini{
+    display: none;
+}
 
 .header_shortcut{
     width: 40px;
@@ -129,19 +136,40 @@ body.dark .search_btn{
 
 
 /* NAVBAR CSS START  */
+
+.navbar.toggler{
+    background: none !important;
+}
+.navbar,
 .navbar.top-navbar {
     background: var(--ColorWhitePrimary);
     z-index: 9999999;
     box-shadow: 0px 3px 3px rgba(78, 78, 78, 0.5);
 }
-/* .navbar,
-.navbar.top-navbar {
-    background: var(--ColorWhitePrimary);
-    z-index: 9999999;
-    box-shadow: 0px 3px 3px rgba(78, 78, 78, 0.5);
+/* .navbar .offcanvas{
+    background: rgba(255, 255, 255, 0.6) !important;
+    transition: .3s linear;
+}
+body.dark .navbar .offcanvas{
+    background: rgba(0, 0, 0, 0.6) !important;
 } */
-.navbar .offcanvas{
-    background: none !important;
+/* moved to responsive css  */
+
+.navbar .offcanvas-header{
+    position: relative;
+}
+.navbar .offcanvas-header::before {
+	position: absolute;
+	content: '';
+	left: 100%;
+	bottom: 0;
+	width: 1px;
+	height: 100%;
+	background: var(--BgWhitePrimary);
+	transition: .3s linear;
+}
+body.dark .navbar .offcanvas-header::before {
+	background: var(--BgBlackPrimary);
 }
 .body_left .navbar{
     box-shadow: none;
@@ -220,6 +248,7 @@ body.dark .dropdown-menu {
 	outline: 0;
 	box-shadow: 0 0 0 0;
 }
+
 /* NAVBAR CSS END  */
 
 /* BANNER CSS START  */

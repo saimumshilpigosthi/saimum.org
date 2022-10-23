@@ -131,13 +131,13 @@ $(document).ready(function () {
         $(".offcanvas-header .content").css("padding-right", body_padding);
         $(".offcanvas-header .sub_content").css("padding-right", body_padding);
         
-        var header_right_width = $("header .body_right").width();
+        var header_left_width = $("header .body_left").width();
 
         var string = body_padding;
         var body_padding = string.match(/\d/g);
         var body_padding_number = body_padding.join("");
 
-        var header_right_width_with_body_padding = Number(header_right_width) + Number(body_padding_number);
+        var header_left_width_with_body_padding = Number(header_left_width) + Number(body_padding_number);
 
         var right_col_padding_right = $("#body_right").css('padding-right');
         var left_col_padding_right = $("#body_right").css('padding-left');
@@ -148,7 +148,7 @@ $(document).ready(function () {
         var left_col_padding_right = left_col_padding_right.match(/\d/g);
         var left_col_padding_right = left_col_padding_right.join("");
 
-        var total_offcanvus_width = Number(header_right_width_with_body_padding) + Number(right_col_padding_right) + Number(left_col_padding_right)
+        var total_offcanvus_width = Number(header_left_width_with_body_padding) + Number(right_col_padding_right) + Number(left_col_padding_right)
         // alert(total_offcanvus_width);
 
         $(".offcanvas").width(total_offcanvus_width);
