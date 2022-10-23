@@ -1,30 +1,89 @@
+/* MODAL CSS STARTS  */
+.modal-backdrop{
+    z-index: 999999;
+    /* background: transparent; */
+}
+
+.modal{
+    z-index: 99999999;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.modal-content{
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+.modal-header{
+    padding: 13px 13px;
+    border-bottom: 0;
+}
+.modal-footer {
+	padding: .5rem 0.5rem;
+	border-top: 0;
+}
+/* MODAL CSS ENDS  */
+
+
+
+
+
+
+
+/* OFFCANVUS PANELS CSS START  */
 .offcanvas-backdrop{
     z-index: 9;
     background: transparent;
 }
-.offcanvas{
-    backdrop-filter: blur(10px);
+.offcanvas {
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background: rgba(255, 255, 255, 0.3) !important;
 }
 
 .offcanvas-header{
     transition: .3s linear;
+    position: relative;
+}
+.offcanvas-header::before{
+    position: absolute;
+    content: '';
+    right: 100%;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    background: var(--BgWhitePrimary);
+    transition: .3s linear;
+}
+body.dark .offcanvas-header::before{
+    background: var(--BgBlackPrimary);
+}
+.offcanvas-header .content{
+    height: 50px;
 }
 body.dark .offcanvas-header{
     background: var(--BgBlackPrimary) !important;
 }
 
-.day_night_switcher{
-    margin-left: 10px;
-    padding-left: 10px;
+
+.sub_content{
+    padding-left: 12px;
+    /* will be vary on responsive  */
 }
-.day_night_switcher button i,
-.day_night_switcher button span {
+.sub_content button span {
 	text-transform: uppercase;
 	font-weight: 700;
-	padding: 7px 10px !important;
-	/* position: relative; */
-	color: var(--ColorBlackSecondary);
+	padding: 7px 7px;
 }
+.sub_content.mode_switcher button span{
+    padding: 6px 7px;
+}
+body.dark .sub_content button span{
+    color: var(--ColorWhitePrimary);
+}
+/* OFFCANVUS PANELS CSS END  */
+
+
+
+
 
 
 
@@ -54,6 +113,10 @@ body.dark .offcanvas-header{
     transform: rotate(360deg);
     color: var(--ColorPrimary);
 }
+.header_shortcut.active svg{
+    color: var(--ColorPrimary);
+}
+
 .search_btn{
     border: 1px solid #ced4da !important;
 }
@@ -66,11 +129,22 @@ body.dark .search_btn{
 
 
 /* NAVBAR CSS START  */
-.navbar,
 .navbar.top-navbar {
     background: var(--ColorWhitePrimary);
     z-index: 9999999;
     box-shadow: 0px 3px 3px rgba(78, 78, 78, 0.5);
+}
+/* .navbar,
+.navbar.top-navbar {
+    background: var(--ColorWhitePrimary);
+    z-index: 9999999;
+    box-shadow: 0px 3px 3px rgba(78, 78, 78, 0.5);
+} */
+.navbar .offcanvas{
+    background: none !important;
+}
+.body_left .navbar{
+    box-shadow: none;
 }
 .navbar.submenu {
     z-index: 999999;
@@ -81,7 +155,10 @@ body.dark .search_btn{
     padding: 7px 10px;
     position: relative;
     white-space: nowrap;
-    color: var(--ColorBlackSecondary);
+    color: var(--ColorBlackPrimary);
+}
+body.dark .navbar .nav-item .nav-link{
+    color: var(--ColorWhitePrimary);
 }
 .navbar .nav-item .nav-link.active{
     color: var(--ColorPrimary);
@@ -136,6 +213,12 @@ body.dark .dropdown-menu {
 .dropdown-menu .dropdown-item:hover{
     background: var(--ColorPrimary);
     color: var(--ColorWhitePrimary) !important;
+}
+
+.navbar-toggler:focus {
+	text-decoration: none;
+	outline: 0;
+	box-shadow: 0 0 0 0;
 }
 /* NAVBAR CSS END  */
 
@@ -243,7 +326,7 @@ body.dark .dropdown-menu {
 }
 .single_content:hover{
     box-shadow: none;
-    border: 2px solid var(--ColorPrimary);
+    /* border: 2px solid var(--ColorPrimary); */
 }
 .single_content .overlay_pos div a {
 	position: absolute;

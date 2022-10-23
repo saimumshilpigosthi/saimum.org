@@ -111,21 +111,25 @@ $(document).ready(function () {
 
 // OFFCANVUS  RIGHT PANEL JS START 
 
-    // $('.header_shortcut svg').on('click', function () {
-    //     $('.header_shortcut svg').removeClass('ColorPrimary');
-    //     $(this).addClass('ColorPrimary');
-    // });
+    
+    $('.offcanvas .content .header_shortcut').on('click', function () {
+        $('.offcanvas .content .header_shortcut').removeClass('active');
+        $(this).toggleClass('active');
+    });
 
-    $(".header_shortcut").click(function() {
+    $(".header_shortcut, .navbar-toggler").click(function() {
+        $('.header_shortcut').removeClass('active');
+        $(this).addClass('active');
 
-        var header_shortcut = $(".header_area .body_right").html();
-        $(".offcanvas-header .content").html(header_shortcut);
-        
-        // $(".header_area .header_shortcut").toggleClass("body_right");
+        // copy header right cuicklbar code and paste 
+        // var header_shortcut = $(".header_area .body_right").html();
+        // $(".offcanvas-header .content").html(header_shortcut);
 
+        // fix padding margin of offcanvus exact to header quick bar 
         var body_padding = $("body").css('padding-right');
+
         $(".offcanvas-header .content").css("padding-right", body_padding);
-        $(".day_night_switcher").css("padding-right", body_padding);
+        $(".offcanvas-header .sub_content").css("padding-right", body_padding);
         
         var header_right_width = $("header .body_right").width();
 
@@ -133,11 +137,22 @@ $(document).ready(function () {
         var body_padding = string.match(/\d/g);
         var body_padding_number = body_padding.join("");
 
-        var offcanvus_width = Number(header_right_width) + Number(body_padding_number);
+        var header_right_width_with_body_padding = Number(header_right_width) + Number(body_padding_number);
 
-        $(".offcanvas").width(offcanvus_width);
+        var right_col_padding_right = $("#body_right").css('padding-right');
+        var left_col_padding_right = $("#body_right").css('padding-left');
         
-        // alert(body_padding);
+        var right_col_padding_right = right_col_padding_right.match(/\d/g);
+        var right_col_padding_right = right_col_padding_right.join("");
+
+        var left_col_padding_right = left_col_padding_right.match(/\d/g);
+        var left_col_padding_right = left_col_padding_right.join("");
+
+        var total_offcanvus_width = Number(header_right_width_with_body_padding) + Number(right_col_padding_right) + Number(left_col_padding_right)
+        // alert(total_offcanvus_width);
+
+        $(".offcanvas").width(total_offcanvus_width);
+        $(".navbar .offcanvas").width(total_offcanvus_width - body_padding_number);
     });
 
     // OFFCANVUS RIGHT PANEL JS END

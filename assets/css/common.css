@@ -310,26 +310,33 @@ img {
 }
 
 /*== All Button Style ==*/
-/* .theme_btn {
-    font-size: 20px;
-    display: inline-block;
-    padding: 10px 15px;
-    color: var(--themeColor);
-    background: var(--themeWhite);
-    border: 1px solid var(--themeColor) !important;
+button{
+    border-radius: 50rem !important;
+}
+.theme_btn {
+    color: var(--ColorWhitePrimary);
+    background: var(--ColorPrimary);
+    border: 1px solid var(--ColorPrimary) !important;
     text-align: center;
-    position: relative;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
 }
-
 .theme_btn:hover {
-    color: var(--themeWhite);
-    background: var(--themeColor);
-} */
+    color: var(--ColorBlackPrimary);
+    background: transparent;
+}
+body.dark .theme_btn{
+    background: var(--BgBlackPrimary);
+    border: 1px solid var(--ColorBlackPrimary) !important;
+}
+body.dark .theme_btn:hover{
+    border: 1px solid var(--ColorWhitePrimary) !important;
+    color: var(--ColorWhitePrimary);
+    background: transparent;
+}
 
 
 
@@ -340,8 +347,8 @@ img {
 section{
     padding: 60px 0;
 }
-.section_title{
-    margin-bottom: 30px;
+.section_content{
+    margin-top: 30px;
 }
 .title_wrap > h2 {
     padding-top: 8px;
@@ -372,21 +379,6 @@ section{
 
 
 
-
-
-
-
-
-
-
-
-
-.section_design{
-    border-top: 10px solid var(--ColorBlackPrimary);
-    padding: 5px;
-    border-bottom: 3px solid var(--ColorBlackPrimary);
-}
-
 .h-100{
     height: 100%;
 }
@@ -396,7 +388,7 @@ svg, i{
 
 .body_left,
 .body_right{
-    min-width: 275px;
+    width: 275px !important;
 }
 
 
