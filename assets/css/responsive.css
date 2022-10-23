@@ -54,9 +54,19 @@
 }
 
 @media (max-width: 575px) {
-     #search_big{
-        display: none;
+     #search_big .search_big {
+        display: none !important;
     }
+    .search_icon_mini{
+        display: block !important;
+    }
+    .search_bar {
+        padding: 0;
+    }
+    .search_icon_phone{
+        display: block !important;
+    }
+    
 
 }
 /* `md` applies to small devices (landscape phones, less than 768px) */
@@ -92,6 +102,9 @@
     .search_icon_mini{
         display: none !important;
     }
+    .search_icon_phone{
+        display: none; 
+    }
 
 
 }
@@ -104,11 +117,36 @@
     .search_icon_mini{
         display: block;
     }
+
+    .search_bar_mini{
+        position: fixed;
+        left: 0; 
+        right: 0; 
+        top: -50px; 
+        /* min-height: 50px;  */
+        background: var(--BgWhitePrimary); 
+        z-index: 9999999;
+        display: block;
+        transition: .3s linear;
+    }
+    body.dark .search_bar_mini{
+        background: var(--BgBlackPrimary); 
+    }
+    .search_bar_mini.active{
+        top: 0 !important;
+    }
+    .search_bar_mini .search{
+        min-height: 50px; 
+    }
+    .search_icon_phone{
+        display: none; 
+    }
+
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-
+    
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */

@@ -25,9 +25,6 @@
 
 
 
-
-
-
 /* OFFCANVUS PANELS CSS START  */
 .offcanvas-backdrop{
     z-index: 9;
@@ -92,6 +89,10 @@ body.dark .sub_content button span{
 
 
 /* HEADER CSS START  */
+.search_bar_mini{
+    display: none;
+}
+
 .search_bar{
     padding: 5px 0;
 }

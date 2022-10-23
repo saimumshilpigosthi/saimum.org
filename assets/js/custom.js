@@ -158,7 +158,16 @@ $(document).ready(function () {
     // OFFCANVUS RIGHT PANEL JS END
 
 
-    
+    $(".search_icon_mini .search_icon").click(function () {
+        $(".search_bar_mini").addClass("active");
+    });
+    $(".search_cancel_mini .cancel_icon").click(function () {
+        $(".search_bar_mini").removeClass("active");
+    });
+
+    $(".search_icon_phone .search_icon").click(function () {
+        $(".search_bar_mini").addClass("active");
+    });
 
 
 

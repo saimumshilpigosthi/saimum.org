@@ -64,10 +64,45 @@
             </div>
         </div> -->
 
+        <div class="search_bar_mini">
+            <div class="search d-flex align-items-center">
+                <div class="container-xxl">
+                    <div class="row">
+                        <div class="col-12">
+                            
+                            <div class="">
+                                <form method="GET" class="d-flex" role="search">
+                                    <div class="search_cancel_mini">
+                                        <div class="cancel_icon d-flex align-items-center justify-content-center" style="height: 40px; width: 40px;">
+                                            <i class="fas fa-arrow-left"></i>
+                                        </div>
+                                    </div>
+                                    <!-- <select name="" id=""
+                                        class="form-control rounded-0 rounded-start search_actions">
+                                        <option value="">Lorem ipsum, dolor sit amet</option>
+                                        <option value="">Song</option>
+                                        <option value="">Natok</option>
+                                    </select> -->
+                                    <input class="form-control rounded-0" type="search" placeholder="Type..."
+                                        aria-label="Search">
+                                    <button
+                                        class="btn search_btn rounded-0 rounded-end d-flex align-items-center justify-content-center search_actions"
+                                        type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <header class="header_area" style="position: sticky; top: 0; z-index: 999999;">
-                <div class="container-fluid">
-                    <div class="row justify-content-between">
-                        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <div class="d-flex align-items-center justify-content-between">
                             <div class="body_left d-flex align-items-center">
                                 <div class="navbar toggler navbar-expand-md">
                                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -80,35 +115,44 @@
                                         class="h-100 p-1">
                                 </a>
                             </div>
+                            <div class="">
+                                <div class="search_icon_phone">
+                                    <div class="d-flex align-items-center justify-content-endd-flex align-items-center justify-content-end">
+                                        <div class="search_icon d-flex align-items-center justify-content-center" style="height: 40px; width: 40px;">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-4 col-sm-8 col-xs-12 p-0" id="search_big">
-                            <div class="body_middle">
-                                <div class="search_bar d-flex align-items-center flex-fill">
-                                    <div class="container-xxl">
-                                        <div class="row">
-                                            <div class="col p-0">
-                                                <div class="search_big">
-                                                    <form method="GET" class="d-flex" role="search">
-                                                        <select name="" id=""
-                                                            class="form-control rounded-0 rounded-start search_actions">
-                                                            <option value="">Lorem ipsum, dolor sit amet</option>
-                                                            <option value="">Song</option>
-                                                            <option value="">Natok</option>
-                                                        </select>
-                                                        <input class="form-control rounded-0" type="search" placeholder="Type..."
-                                                            aria-label="Search">
-                                                        <button
-                                                            class="btn search_btn rounded-0 rounded-end d-flex align-items-center justify-content-center search_actions"
-                                                            type="submit">
-                                                            <i class="fas fa-search"></i>
-                                                        </button>
-                                                    </form>
-                                                </div>
-                                                <div class="search_icon_mini">
-                                                    <div class="d-flex align-items-center justify-content-endd-flex align-items-center justify-content-end">
-                                                        <div class="d-flex align-items-center justify-content-center" style="height: 40px; width: 40px;">
-                                                            <i class="fas fa-search"></i>
-                                                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4 col-sm-8 col-xs-12 p-0" id="search_big">
+                        <div class="body_middle">
+                            <div class="search_bar d-flex align-items-center flex-fill">
+                                <div class="container-xxl">
+                                    <div class="row">
+                                        <div class="col p-0">
+                                            <div class="search_big">
+                                                <form method="GET" class="d-flex" role="search">
+                                                    <select name="" id=""
+                                                        class="form-control rounded-0 rounded-start search_actions">
+                                                        <option value="">Lorem ipsum, dolor sit amet</option>
+                                                        <option value="">Song</option>
+                                                        <option value="">Natok</option>
+                                                    </select>
+                                                    <input class="form-control rounded-0" type="search" placeholder="Type..."
+                                                        aria-label="Search">
+                                                    <button
+                                                        class="btn search_btn rounded-0 rounded-end d-flex align-items-center justify-content-center search_actions"
+                                                        type="submit">
+                                                        <i class="fas fa-search"></i>
+                                                    </button>
+                                                </form>
+                                            </div>
+                                            <div class="search_icon_mini">
+                                                <div class="d-flex align-items-center justify-content-endd-flex align-items-center justify-content-end">
+                                                    <div class="search_icon d-flex align-items-center justify-content-center" style="height: 40px; width: 40px;">
+                                                        <i class="fas fa-search"></i>
                                                     </div>
                                                 </div>
                                             </div>
@@ -117,50 +161,52 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-4 mobile_menu d-flex justify-content-center" id="body_right">
-                            <div class="body_right d-flex justify-content-between align-items-center">
-                                <div class="header_shortcut position-relative" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvascollection" aria-controls="offcanvascollection">
-                                    <i class="fas fa-bookmark"></i>
-                                    <span class="position-absolute badge rounded-pill bg-danger"
-                                        style="left: 50%; bottom: 57%;">10</span>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mobile_menu d-flex justify-content-center" id="body_right">
+                        <div class="body_right d-flex justify-content-between align-items-center">
+                            <div class="header_shortcut position-relative" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvascollection" aria-controls="offcanvascollection">
+                                <i class="fas fa-bookmark"></i>
+                                <span class="position-absolute badge rounded-pill bg-danger"
+                                    style="left: 50%; bottom: 57%;">10</span>
+                            </div>
+                            <div class="header_shortcut position-relative" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvascart" aria-controls="offcanvascart">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="position-absolute badge rounded-pill bg-danger"
+                                    style="left: 50%; bottom: 57%;">10+</span>
+                            </div>
+                            <div class="header_shortcut" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasnotofication" aria-controls="offcanvasnotofication">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="header_shortcut" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasinbox" aria-controls="offcanvasinbox">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <!-- <div class="header_shortcut" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="fas fa-cog"></i>
+                            </div> -->
+                            <div class="header_shortcut dropdown" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasprofile" aria-controls="offcanvasprofile">
+                                <div class="image_holder d-flex align-items-center justify-content-center border-1 rounded-circle overflow-hidden"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://scontent.fdac136-1.fna.fbcdn.net/v/t1.6435-9/72444861_2406440429597572_6522974919305723904_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGzU_S2QdIrk8s70pD6162wpv1TCp-u692m_VMKn67r3djulXK9951Zd5zLxBWcW4FzQxlnAykjH0qVug8jxiVv&_nc_ohc=JykC1St-rOAAX8sruZr&_nc_ht=scontent.fdac136-1.fna&oh=00_AT_WeRtzl7duK0JyKum8eGOi5w8w8vqCPu6YbABfYiWxGg&oe=637533A5"
+                                        alt="" class="w-100">
                                 </div>
-                                <div class="header_shortcut position-relative" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvascart" aria-controls="offcanvascart">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    <span class="position-absolute badge rounded-pill bg-danger"
-                                        style="left: 50%; bottom: 57%;">10+</span>
-                                </div>
-                                <div class="header_shortcut" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasnotofication" aria-controls="offcanvasnotofication">
-                                    <i class="fas fa-bell"></i>
-                                </div>
-                                <div class="header_shortcut" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasinbox" aria-controls="offcanvasinbox">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <!-- <div class="header_shortcut" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                    <i class="fas fa-cog"></i>
-                                </div> -->
-                                <div class="header_shortcut dropdown" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasprofile" aria-controls="offcanvasprofile">
-                                    <div class="image_holder d-flex align-items-center justify-content-center border-1 rounded-circle overflow-hidden"
-                                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="https://scontent.fdac136-1.fna.fbcdn.net/v/t1.6435-9/72444861_2406440429597572_6522974919305723904_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGzU_S2QdIrk8s70pD6162wpv1TCp-u692m_VMKn67r3djulXK9951Zd5zLxBWcW4FzQxlnAykjH0qVug8jxiVv&_nc_ohc=JykC1St-rOAAX8sruZr&_nc_ht=scontent.fdac136-1.fna&oh=00_AT_WeRtzl7duK0JyKum8eGOi5w8w8vqCPu6YbABfYiWxGg&oe=637533A5"
-                                            alt="" class="w-100">
-                                    </div>
-                                    <!-- <i class="fa fa-user"></i> -->
-                                </div>
+                                <!-- <i class="fa fa-user"></i> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                
+            </div>
         </header>
 
-        
 
-        <!-- <div class="search_bar d-flex align-items-center flex-fill"></div> -->
+
+
+
+
         <nav class="navbar navbar-expand-md navbar-light sticky-top p-0"
             style="top: 50px !important; z-index: 999; min-height: 30px !important;">
 
@@ -247,31 +293,7 @@
                 </div>
             </div>
         
-            <div class="search_bar_mini bg-danger position-absolute d-none" style="left: 0; right: 0; top: 100%; z-index: 99;">
-                <div class="container-xxl">
-                    <div class="row ">
-                        <div class="col-10 m-auto">
-                            <div class="bg-primary">
-                                <form method="GET" class="d-flex" role="search">
-                                    <select name="" id=""
-                                        class="form-control form-control-sm rounded-0 rounded-start search_actions">
-                                        <option value="">Lorem ipsum, dolor sit amet</option>
-                                        <option value="">Song</option>
-                                        <option value="">Natok</option>
-                                    </select>
-                                    <input class="form-control form-control-sm rounded-0" type="search" placeholder="Type..."
-                                        aria-label="Search">
-                                    <!-- <button
-                                        class="btn search_btn rounded-0 rounded-end d-flex align-items-center justify-content-center search_actions"
-                                        type="submit">
-                                        <i class="fas fa-search"></i>
-                                    </button> -->
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </nav>
 
         <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
