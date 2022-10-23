@@ -89,6 +89,9 @@ body.dark .sub_content button span{
 
 
 /* HEADER CSS START  */
+header, .search_bar_mini {
+    border-bottom: 1px solid #ced4da;;
+}
 .search_bar_mini{
     display: none;
 }
@@ -101,6 +104,9 @@ body.dark .sub_content button span{
 }
 .search_icon_mini{
     display: none;
+}
+.search_icon_phone {
+    display: none; 
 }
 
 .header_shortcut{

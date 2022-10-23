@@ -131,7 +131,8 @@ $(document).ready(function () {
         $(".offcanvas-header .content").css("padding-right", body_padding);
         $(".offcanvas-header .sub_content").css("padding-right", body_padding);
         
-        var header_left_width = $("header .body_left").width();
+        // var header_left_width = $("header .body_left").width();
+        var header_left_width = 275;
 
         var string = body_padding;
         var body_padding = string.match(/\d/g);

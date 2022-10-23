@@ -66,6 +66,9 @@
     .search_icon_phone{
         display: block !important;
     }
+    .search_actions {
+        width: auto;
+    }
     
 
 }
@@ -102,9 +105,7 @@
     .search_icon_mini{
         display: none !important;
     }
-    .search_icon_phone{
-        display: none; 
-    }
+
 
 
 }
@@ -122,7 +123,7 @@
         position: fixed;
         left: 0; 
         right: 0; 
-        top: -50px; 
+        top: -51px; 
         /* min-height: 50px;  */
         background: var(--BgWhitePrimary); 
         z-index: 9999999;
@@ -138,9 +139,7 @@
     .search_bar_mini .search{
         min-height: 50px; 
     }
-    .search_icon_phone{
-        display: none; 
-    }
+
 
 }
 
@@ -158,5 +157,7 @@
     body.dark .navbar .offcanvas{
         background: var(--BgBlackPrimary) !important;
     }
+    
+    
 }
 
