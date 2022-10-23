@@ -168,6 +168,7 @@ $(document).ready(function () {
 
     $(".search_icon_phone .search_icon").click(function () {
         $(".search_bar_mini").addClass("active");
+        $(".offcanvas-backdrop").click();
     });
 
 

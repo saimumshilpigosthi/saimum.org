@@ -311,7 +311,7 @@
                                 <button class="border-0 bg-transparent w-100">
                                     <div class="d-flex justify-content-between align-items-center">
                                         <span></span>
-                                        <span>Messages</span>
+                                        <span>Profile</span>
                                     </div>
                                 </button>
                             </div>
@@ -322,45 +322,37 @@
                 <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
             </div>
             <div class="offcanvas-body">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="sub_content mode_switcher rounded-3 bg-primary py-2">
-                                <button class="dark-button border-0 bg-transparent w-100">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span>
-                                            <i class="fas fa-moon"></i>
-                                        </span>
-                                        <span>Night Mode</span>
-                                    </div>
-                                </button>
-                                <button class="light-button border-0 bg-transparent w-100">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span>
-                                            <i class="fas fa-sun"></i>
-                                        </span>
-                                        <span>Day Mode</span>
-                                    </div>
-                                </button>
-                            </div>
+                <div class="sub_content mode_switcher rounded-3 bg-primary py-2">
+                    <button class="dark-button border-0 bg-transparent w-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>
+                                <i class="fas fa-moon"></i>
+                            </span>
+                            <span>Night Mode</span>
                         </div>
-                        <!-- <div class="col-6">
-                            <button class="btn theme_btn w-100" data-bs-toggle="modal" data-bs-target="#login">
-                                <div data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasprofile" aria-controls="offcanvasprofile">
-                                    Login
-                                </div>
-                            </button>
+                    </button>
+                    <button class="light-button border-0 bg-transparent w-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>
+                                <i class="fas fa-sun"></i>
+                            </span>
+                            <span>Day Mode</span>
                         </div>
-                        <div class="col-6">
-                            <button class="btn theme_btn w-100" data-bs-toggle="modal" data-bs-target="#register">
-                                <div data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasprofile" aria-controls="offcanvasprofile">
-                                    Register
-                                </div>
-                            </button>
-                        </div> -->
-                    </div>
+                    </button>
+                </div>
+                <div class="d-flex align-content-stretch">
+                    <button class="btn theme_btn my-1 w-100" data-bs-toggle="modal" data-bs-target="#login">
+                        <div data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasprofile" aria-controls="offcanvasprofile">
+                            Login
+                        </div>
+                    </button>
+                    <button class="btn theme_btn my-1 w-100" data-bs-toggle="modal" data-bs-target="#register">
+                        <div data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasprofile" aria-controls="offcanvasprofile">
+                            Register
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -393,9 +385,9 @@
                                             <label for="password" class="form-label">Password</label>
                                             <input type="password" class="form-control" id="password" aria-describedby="password">
                                         </div>
-                                        <div class="mb-3 d-flex align-items-center">
-                                            <a href="#" class="ColorPrimary mr-10">Forget Password?</a>
-                                            <button type="submit" class="btn theme_btn flex-grow-1 ml-10" form="loginForm">Login</button>
+                                        <div class="mb-3 d-flex align-content-stretch align-items-center">
+                                            <a href="#" class="ColorPrimary w-100">Forget Password?</a>
+                                            <button type="submit" class="btn theme_btn w-100" form="loginForm">Login</button>
                                         </div>
                                     </form>
                                 </div>
@@ -435,9 +427,9 @@
                                             <label for="password" class="form-label">Password</label>
                                             <input type="password" class="form-control" id="password" aria-describedby="password">
                                         </div>
-                                        <div class="mb-3 d-flex align-items-center">
-                                            <a href="#" class="ColorPrimary mr-10">Forget Password?</a>
-                                            <button type="button" class="btn theme_btn flex-grow-1 ml-10" form="registerForm">Register</button>
+                                        <div class="mb-3 d-flex align-content-stretch align-items-center"">
+                                            <a href="#" class="ColorPrimary w-100">Forget Password?</a>
+                                            <button type="button" class="btn theme_btn w-100" form="registerForm">Register</button>
                                         </div>
                                     </form>
                                 </div>
