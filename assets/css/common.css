@@ -25,10 +25,10 @@
 :root {
 
     /* font colors  */
-    --ColorWhitePrimary: #FCFCFC;
-    --ColorWhiteSecondary: #5C5C5C;
-    --ColorBlackPrimary: #010101;
-    --ColorBlackSecondary: #909393;
+    /* --ColorLightPrimary: #ffffff;
+    --ColorLightSecondary: #5C5C5C;
+    --ColorDarkPrimary: #010101;
+    --ColorDarkSecondary: #909393; */
 
     /* background colors  */
     --BgBlackPrimary: #121212;
@@ -44,6 +44,19 @@
     /* fonts  */
     --FontPrimary: 'Poppins', sans-serif;
     --FontSecondary: 'ConeriaScript', sans-serif;
+
+
+    --ColorLightPrimary: rgb(255, 255, 255);
+    --ColorLightSecondary: rgb(241, 241, 241);
+    --ColorLightExtra: rgb(245, 245, 245);
+
+    --ColorLightDark: rgb(206, 212, 218);
+
+    --ColorDarkPrimary: rgb(33, 33, 33);
+    --ColorDarkSecondary: rgb(68, 68, 68);
+    --ColorDarkExtra: hwb(0 47% 53%);
+
+
 }
 
 
@@ -51,17 +64,17 @@
 
 
 /* font colors  */
-.ColorWhitePrimary{
-    color: var(--ColorWhitePrimary) !important;
+.ColorLightPrimary{
+    color: var(--ColorLightPrimary) !important;
 }
-.ColorWhiteSecondary {
-    color: var(--ColorWhiteSecondary) !important;
+.ColorLightSecondary {
+    color: var(--ColorLightSecondary) !important;
 }
-.ColorBlackPrimary {
-    color: var(--ColorBlackPrimary) !important;
+.ColorDarkPrimary {
+    color: var(--ColorDarkPrimary) !important;
 }
-.ColorBlackSecondary {
-    color: var(--ColorBlackSecondary) !important;
+.ColorDarkSecondary {
+    color: var(--ColorDarkSecondary) !important;
 }
 
 /* background colors  */
@@ -126,14 +139,14 @@ body {
 
 body.dark {
   background-color: var(--BgBlackSecondary);
-  color: var(--ColorWhitePrimary);
+  color: var(--ColorLightPrimary);
 }
 .dark {
   -webkit-transition: background-color 800ms ease;
   transition: background-color 800ms ease;
 }
 body.dark svg {
-  color: var(--ColorWhitePrimary);
+  color: var(--ColorLightPrimary);
 }
 body.dark header,
 body.dark nav {
@@ -150,7 +163,7 @@ nav {
 
 body.dark .form-control{
     background-color: var(--BgBlackSecondary);
-    color: var(--ColorWhitePrimary);
+    color: var(--ColorLightPrimary);
 }
 
 
@@ -177,7 +190,7 @@ p {
     line-height: 26px;
     margin: 0;
     font-family: var(--FontPrimary);
-    color: var(--ColorBlackSecondary);
+    color: var(--ColorDarkSecondary);
     margin-bottom: 15px;
 }
 
@@ -314,7 +327,7 @@ button{
     border-radius: 50rem !important;
 }
 .theme_btn {
-    color: var(--ColorWhitePrimary);
+    color: var(--ColorLightPrimary);
     background: var(--ColorPrimary);
     border: 1px solid var(--ColorPrimary) !important;
     text-align: center;
@@ -325,16 +338,16 @@ button{
     -o-transition: all 0.3s linear;
 }
 .theme_btn:hover {
-    color: var(--ColorBlackPrimary);
+    color: var(--ColorDarkPrimary);
     background: transparent;
 }
 body.dark .theme_btn{
     background: var(--BgBlackPrimary);
-    border: 1px solid var(--ColorBlackPrimary) !important;
+    border: 1px solid var(--ColorDarkPrimary) !important;
 }
 body.dark .theme_btn:hover{
-    border: 1px solid var(--ColorWhitePrimary) !important;
-    color: var(--ColorWhitePrimary);
+    border: 1px solid var(--ColorLightPrimary) !important;
+    color: var(--ColorLightPrimary);
     background: transparent;
 }
 
@@ -400,7 +413,7 @@ svg, i{
 
 
 a.social-icon {
-    color: var(--ColorBlackSecondary);
+    color: var(--ColorDarkSecondary);
     margin-right: 15px;
     transition: .3s linear;
 }

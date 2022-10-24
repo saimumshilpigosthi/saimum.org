@@ -78,7 +78,7 @@ body.dark .offcanvas-header{
     padding: 6px 7px;
 }
 body.dark .sub_content button span{
-    color: var(--ColorWhitePrimary);
+    color: var(--ColorLightPrimary);
 }
 /* OFFCANVUS PANELS CSS END  */
 
@@ -149,7 +149,7 @@ body.dark .search_btn{
 }
 .navbar,
 .navbar.top-navbar {
-    background: var(--ColorWhitePrimary);
+    background: var(--ColorLightPrimary);
     z-index: 9999999;
     box-shadow: 0px 3px 3px rgba(78, 78, 78, 0.5);
 }
@@ -190,10 +190,10 @@ body.dark .navbar .offcanvas-header::before {
     padding: 7px 10px;
     position: relative;
     white-space: nowrap;
-    color: var(--ColorBlackPrimary);
+    color: var(--ColorDarkPrimary);
 }
 body.dark .navbar .nav-item .nav-link{
-    color: var(--ColorWhitePrimary);
+    color: var(--ColorLightPrimary);
 }
 .navbar .nav-item .nav-link.active{
     color: var(--ColorPrimary);
@@ -202,7 +202,7 @@ body.dark .navbar .nav-item .nav-link.active:hover{
     color: var(--ColorPrimary);
 }
 body.dark .navbar .nav-item .nav-link:focus{
-    color: var(--ColorWhitePrimary);
+    color: var(--ColorLightPrimary);
 }
 .navbar .nav-item .nav-link::before{
     position: absolute;
@@ -223,7 +223,7 @@ body.dark .navbar .nav-item .nav-link:focus{
     width: 100%;
 }
 body.dark .navbar .nav-item .nav-link:hover{
-    color: var(--ColorWhitePrimary);
+    color: var(--ColorLightPrimary);
 }
 
 
@@ -243,11 +243,11 @@ body.dark .dropdown-menu {
     text-transform: capitalize;
     padding: 7px 10px;
     position: relative;
-    color: var(--ColorWhiteSecondary) !important;
+    color: var(--ColorLightSecondary) !important;
 }
 .dropdown-menu .dropdown-item:hover{
     background: var(--ColorPrimary);
-    color: var(--ColorWhitePrimary) !important;
+    color: var(--ColorLightPrimary) !important;
 }
 
 .navbar-toggler:focus {
@@ -308,8 +308,8 @@ body.dark .dropdown-menu {
     font-size: 60px;
     padding: 10px;
     margin: 20px 0;
-    text-shadow: 1px 1px 1px var(--ColorBlackPrimary);
-    color: var(--ColorWhitePrimary);
+    text-shadow: 1px 1px 1px var(--ColorDarkPrimary);
+    color: var(--ColorLightPrimary);
     line-height: 40px;
 }
 
@@ -336,7 +336,7 @@ body.dark .dropdown-menu {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	border: 1px solid var(--ColorWhitePrimary);
+	border: 1px solid var(--ColorLightPrimary);
 	background: transparent;
     backdrop-filter: blur(5px);
 	margin: 5px;
