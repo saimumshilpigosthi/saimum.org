@@ -37,49 +37,18 @@
     transition: .3s linear;
 }
 body.dark .offcanvas{
-    background: rgba(0, 0, 0, 0.6) !important;
-    }
-
-.offcanvas-header{
-    transition: .3s linear;
-    position: relative;
-}
-.offcanvas-header::before{
-    position: absolute;
-    content: '';
-    right: 100%;
-    bottom: 0;
-    width: 1px;
-    height: 100%;
-    background: var(--BgWhitePrimary);
-    transition: .3s linear;
-}
-body.dark .offcanvas-header::before{
-    background: var(--BgBlackPrimary);
-}
-.offcanvas-header .content{
-    height: 50px;
-}
-body.dark .offcanvas-header{
-    background: var(--BgBlackPrimary) !important;
+background: rgba(0, 0, 0, 0.6) !important;
 }
 
-
-.sub_content{
-    padding-left: 12px;
-    /* will be vary on responsive  */
-}
-.sub_content button span {
+.sub_content div {
 	text-transform: uppercase;
 	font-weight: 700;
-	padding: 7px 7px;
+	padding: 6px 8px;
 }
-.sub_content.mode_switcher button span{
-    padding: 6px 7px;
+.offcanvas-footer .header_content_height{
+    display: none;
 }
-body.dark .sub_content button span{
-    color: var(--ColorLightPrimary);
-}
+
 /* OFFCANVUS PANELS CSS END  */
 
 
@@ -89,6 +58,28 @@ body.dark .sub_content button span{
 
 
 /* HEADER CSS START  */
+.header_area{
+    position: sticky; 
+    top: 0; 
+    z-index: 999999;
+}
+.header_content_height{
+    height: 59px;
+}
+.offcanvas .header_content_height{
+    height: 60px;
+}
+.search_icon_phone {
+    display: none; 
+}
+#search_big .search_big{
+    display: block;
+}
+.search_icon_tab{
+    display: none;
+}
+
+
 header, .search_bar_mini {
     border-bottom: 1px solid #ced4da;;
 }
@@ -96,18 +87,12 @@ header, .search_bar_mini {
     display: none;
 }
 
-.search_bar{
-    padding: 5px 0;
-}
 .search_actions{
     width: 100px;
 }
-.search_icon_mini{
-    display: none;
-}
-.search_icon_phone {
-    display: none; 
-}
+
+
+
 
 .header_shortcut{
     width: 40px;
@@ -135,7 +120,7 @@ header, .search_bar_mini {
     border: 1px solid #ced4da !important;
 }
 body.dark .search_btn{
-    background: var(--BgBlackSecondary);
+    background: var(--ColorDarkSecondary);
 }
 
 /* HEADER CSS END  */
@@ -146,6 +131,13 @@ body.dark .search_btn{
 
 .navbar.toggler{
     background: none !important;
+    top: 0;
+    z-index: 99999;
+}
+.navbar{
+    top: 60px;
+    z-index: 99 !important; 
+    min-height: 40px !important;
 }
 .navbar,
 .navbar.top-navbar {
@@ -172,11 +164,11 @@ body.dark .navbar .offcanvas{
 	bottom: 0;
 	width: 1px;
 	height: 100%;
-	background: var(--BgWhitePrimary);
+	background: var(--ColorLightPrimary);
 	transition: .3s linear;
 }
 body.dark .navbar .offcanvas-header::before {
-	background: var(--BgBlackPrimary);
+	background: var(--ColorDarkPrimary);
 }
 .body_left .navbar{
     box-shadow: none;
@@ -187,7 +179,7 @@ body.dark .navbar .offcanvas-header::before {
 .navbar .nav-item .nav-link{
     text-transform: uppercase;
     font-weight: 700;
-    padding: 7px 10px;
+    padding: 12px 10px;
     position: relative;
     white-space: nowrap;
     color: var(--ColorDarkPrimary);
@@ -237,7 +229,7 @@ body.dark .navbar .nav-item .nav-link:hover{
     transition: .3s linear;
 }
 body.dark .dropdown-menu {
-    background: var(--BgBlackPrimary);
+    background: var(--ColorDarkPrimary);
 }
 .dropdown-menu .dropdown-item{
     text-transform: capitalize;

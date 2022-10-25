@@ -24,38 +24,29 @@
 /* Variables For Theme  */
 :root {
 
-    /* font colors  */
-    /* --ColorLightPrimary: #ffffff;
-    --ColorLightSecondary: #5C5C5C;
-    --ColorDarkPrimary: #010101;
-    --ColorDarkSecondary: #909393; */
-
-    /* background colors  */
-    --BgBlackPrimary: #121212;
-    --BgBlackSecondary: #222222;
-    --BgWhitePrimary: #FFFFFF;
-    --BgWhiteSecondary: #e6e6e6;
-
-    /* theme colors  */
-    --ColorPrimary: #FF790E;
-    --ColorPrimaryAlpha: rgba(141, 106, 29, 0.6);
-    --ColorSecondary: #23232D;
-
-    /* fonts  */
-    --FontPrimary: 'Poppins', sans-serif;
-    --FontSecondary: 'ConeriaScript', sans-serif;
-
-
+    /* colors  */
+    /* --ColorLightPrimary: rgb(169, 28, 28); */
     --ColorLightPrimary: rgb(255, 255, 255);
     --ColorLightSecondary: rgb(241, 241, 241);
     --ColorLightExtra: rgb(245, 245, 245);
 
-    --ColorLightDark: rgb(206, 212, 218);
-
+    
     --ColorDarkPrimary: rgb(33, 33, 33);
     --ColorDarkSecondary: rgb(68, 68, 68);
     --ColorDarkExtra: hwb(0 47% 53%);
+    
+    /* theme colors  */
+    --ColorPrimary: #FF790E;
+    --ColorPrimaryAlpha: rgba(141, 106, 29, 0.6);
+    --ColorSecondary: #23232D;
+    
+    /* fonts  */
+    --FontPrimary: 'Poppins', sans-serif;
+    --FontSecondary: 'ConeriaScript', sans-serif;
 
+    /* shadow and borders  */
+    --ColorMix: rgb(206, 212, 218);
+    --BoxShadow: 0px 0px 5px 3px rgba(206, 212, 218, 0.5);
 
 }
 
@@ -67,29 +58,60 @@
 .ColorLightPrimary{
     color: var(--ColorLightPrimary) !important;
 }
+body.dark .ColorLightPrimary{
+    color: var(--ColorDarkPrimary) !important;
+}
+
 .ColorLightSecondary {
     color: var(--ColorLightSecondary) !important;
 }
-.ColorDarkPrimary {
-    color: var(--ColorDarkPrimary) !important;
-}
-.ColorDarkSecondary {
+body.dark .ColorLightSecondary {
     color: var(--ColorDarkSecondary) !important;
 }
 
+.ColorDarkPrimary {
+    color: var(--ColorDarkPrimary) !important;
+}
+body.dark .ColorDarkPrimary {
+    color: var(--ColorLightPrimary) !important;
+}
+
+.ColorDarkSecondary {
+    color: var(--ColorDarkSecondary) !important;
+}
+body.dark .ColorDarkSecondary {
+    color: var(--ColorLightSecondary) !important;
+}
+
+
 /* background colors  */
-.BgBlackPrimary {
-    background: var(--BgBlackPrimary) !important;
+.BgDarkPrimary {
+    background: var(--ColorDarkPrimary) !important;
 }
-.BgBlackSecondary {
-    background: var(--BgBlackSecondary) !important;
+body.dark .BgDarkPrimary {
+    background: var(--ColorLightPrimary) !important;
 }
-.BgWhitePrimary {
-    background: var(--BgWhitePrimary) !important;
+
+.BgDarkSecondary {
+    background: var(--ColorDarkSecondary) !important;
 }
-.BgWhiteSecondary {
-    background: var(--BgWhiteSecondary) !important;
+body.dark .BgDarkSecondary {
+    background: var(--ColorLightSecondary) !important;
 }
+.BgLightPrimary {
+    background: var(--ColorLightPrimary) !important;
+}
+body.dark .BgLightPrimary {
+    background: var(--ColorDarkPrimary) !important;
+}
+
+.BgLightSecondary {
+    background: var(--ColorLightSecondary) !important;
+}
+body.dark .BgLightSecondary {
+    background: var(--ColorDarkSecondary) !important;
+}
+
 
 /* theme colors  */
 .ColorPrimary {
@@ -105,6 +127,14 @@
 /* fonts  */
 .FontPrimary {
     font-family: var(--FontPrimary) !important;
+}
+.FontSecondary {
+    font-family: var(--FontSecondary) !important;
+}
+
+/* shadows  */
+.BoxShadow{
+    box-shadow: var(--BoxShadow) !important;
 }
 
 
@@ -130,7 +160,12 @@ body {
     box-sizing: border-box;
     line-height: 1;
     /* overflow-x: hidden; */
-    position: relative; /* for double submenu. to make them sticky one after another */
+
+    /* position: relative;  */
+    /* for double submenu. to make them sticky one after another */
+
+    background: var(--ColorLightSecondary);
+    color: var(--ColorDarkPrimary);
 }
 
 
@@ -138,31 +173,34 @@ body {
 
 
 body.dark {
-  background-color: var(--BgBlackSecondary);
+  background: var(--ColorDarkSecondary);
   color: var(--ColorLightPrimary);
 }
 .dark {
   -webkit-transition: background-color 800ms ease;
   transition: background-color 800ms ease;
 }
+svg {
+  color: var(--ColorDarkPrimary);
+}
 body.dark svg {
   color: var(--ColorLightPrimary);
 }
 body.dark header,
 body.dark nav {
-  background-color: var(--BgBlackPrimary);
+  background-color: var(--ColorDarkPrimary);
   
 }
 header,
 nav {
-  background-color: var(--BgWhitePrimary);
+  background-color: var(--ColorLightPrimary);
   /* -webkit-transition: background-color 800ms ease;
   transition: background-color 800ms ease; */
   transition: .3s linear;
 }
 
 body.dark .form-control{
-    background-color: var(--BgBlackSecondary);
+    background-color: var(--ColorDarkSecondary);
     color: var(--ColorLightPrimary);
 }
 
@@ -324,13 +362,15 @@ img {
 
 /*== All Button Style ==*/
 button{
-    border-radius: 50rem !important;
+    border-radius: 10px !important;
+    color: var(--ColorLightPrimary);
 }
 .theme_btn {
     color: var(--ColorLightPrimary);
     background: var(--ColorPrimary);
     border: 1px solid var(--ColorPrimary) !important;
     text-align: center;
+    text-transform: uppercase;
     transition: all 0.3s linear;
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -342,13 +382,13 @@ button{
     background: transparent;
 }
 body.dark .theme_btn{
-    background: var(--BgBlackPrimary);
+    background: var(--ColorDarkPrimary) !important;
     border: 1px solid var(--ColorDarkPrimary) !important;
 }
 body.dark .theme_btn:hover{
     border: 1px solid var(--ColorLightPrimary) !important;
     color: var(--ColorLightPrimary);
-    background: transparent;
+    background: transparent !important;
 }
 
 
@@ -421,7 +461,7 @@ a.social-icon {
 table th{
     text-align: center;
     vertical-align: middle;
-    /* color: var(--BgWhitePrimary); */
+    /* color: var(--ColorLightPrimary); */
     padding: 15px !important;
 }
 table td{
@@ -461,3 +501,8 @@ table tbody{
 
 
 /*Section Title CSS End*/
+
+
+.mx_8{
+    margin: 0 -8px;
+}

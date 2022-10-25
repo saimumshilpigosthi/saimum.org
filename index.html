@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="assets/plugins/venobox/venobox.min.css" type="text/css" media="screen" />
 
     <!-- Custom CSS-->
-    <link rel="stylesheet" href="assets/css/default.css">
+    <!-- <link rel="stylesheet" href="assets/css/default.css"> -->
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -65,7 +65,7 @@
         </div> -->
 
         <div class="search_bar_mini">
-            <div class="search d-flex align-items-center">
+            <div class="header_content_height d-flex align-items-center">
                 <div class="container-xxl">
                     <div class="row">
                         <div class="col-12">
@@ -83,7 +83,7 @@
                                         <option value="">Song</option>
                                         <option value="">Natok</option>
                                     </select> -->
-                                    <input class="form-control rounded-0" type="search" placeholder="Type..."
+                                    <input class="form-control rounded-0 rounded-start" type="search" placeholder="Type..."
                                         aria-label="Search">
                                     <button
                                         class="btn search_btn rounded-0 rounded-end d-flex align-items-center justify-content-center search_actions"
@@ -98,24 +98,24 @@
             </div>
         </div>
 
-        <header class="header_area" style="position: sticky; top: 0; z-index: 999999;">
+        <header class="header_area">
             <div class="container-fluid">
                 <div class="row justify-content-between">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="body_left d-flex align-items-center">
-                                <div class="navbar toggler navbar-expand-md">
-                                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                                        <i class="fa fa-bars"></i>
-                                    </button>
+                        <div class="body_left header_content_height">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <div class="navbar toggler navbar-expand-md">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                            <i class="fa fa-bars"></i>
+                                        </button>
+                                    </div>
+                                    <a class="logo header_content_height" href="index.html">
+                                        <img src="https://saimum.org/wp-content/uploads/2021/10/cropped-logo.png" alt=""
+                                            class="h-100 p-1">
+                                    </a>
                                 </div>
-                                <a class="logo" style="height: 50px;" href="index.html">
-                                    <img src="https://saimum.org/wp-content/uploads/2021/10/cropped-logo.png" alt=""
-                                        class="h-100 p-1">
-                                </a>
-                            </div>
-                            <div class="">
                                 <div class="search_icon_phone">
                                     <div class="d-flex align-items-center justify-content-endd-flex align-items-center justify-content-end">
                                         <div class="search_icon d-flex align-items-center justify-content-center" style="height: 40px; width: 40px;">
@@ -128,19 +128,19 @@
                     </div>
                     <div class="col-lg-6 col-md-4 col-sm-8 col-xs-12 p-0" id="search_big">
                         <div class="body_middle">
-                            <div class="search_bar d-flex align-items-center flex-fill">
+                            <div class="search_bar header_content_height d-flex align-items-center flex-fill">
                                 <div class="container-xxl">
                                     <div class="row">
                                         <div class="col p-0">
                                             <div class="search_big">
                                                 <form method="GET" class="d-flex" role="search">
-                                                    <select name="" id=""
+                                                    <!-- <select name="" id=""
                                                         class="form-control rounded-0 rounded-start search_actions">
                                                         <option value="">Lorem ipsum, dolor sit amet</option>
                                                         <option value="">Song</option>
                                                         <option value="">Natok</option>
-                                                    </select>
-                                                    <input class="form-control rounded-0" type="search" placeholder="Type..."
+                                                    </select> -->
+                                                    <input class="form-control rounded-0 rounded-start" type="search" placeholder="Type..."
                                                         aria-label="Search">
                                                     <button
                                                         class="btn search_btn rounded-0 rounded-end d-flex align-items-center justify-content-center search_actions"
@@ -149,7 +149,7 @@
                                                     </button>
                                                 </form>
                                             </div>
-                                            <div class="search_icon_mini">
+                                            <div class="search_icon_tab">
                                                 <div class="d-flex align-items-center justify-content-endd-flex align-items-center justify-content-end">
                                                     <div class="search_icon d-flex align-items-center justify-content-center" style="height: 40px; width: 40px;">
                                                         <i class="fas fa-search"></i>
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mobile_menu d-flex justify-content-end" id="body_right">
-                        <div class="body_right d-flex justify-content-between align-items-center">
+                        <div class="body_right header_content_height d-flex justify-content-between align-items-center">
                             <div class="header_shortcut position-relative" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvascollection" aria-controls="offcanvascollection">
                                 <i class="fas fa-bookmark"></i>
@@ -207,8 +207,7 @@
 
 
 
-        <nav class="navbar navbar-expand-md navbar-light sticky-top p-0"
-            style="top: 50px !important; z-index: 999; min-height: 30px !important;">
+        <nav class="navbar navbar-expand-md navbar-light sticky-top p-0">
 
             <div class="container-xxl align-items-center">
                 <!-- <a class="navbar-brand" href="#" style="height: 60pxx;">
@@ -216,7 +215,8 @@
                 </a> -->
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header" style="height: 80px;">
+                    <div class="offcanvas-header p-0">
+                        <div class="header_content_height"></div>
                         <!-- <a class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
                             <img src="assets/images/logo/logo-new.png" alt="Control Room"
                                 class="d-inline-block align-text-top h-100">
@@ -290,70 +290,62 @@
                             </li> -->
                         </ul>
                     </div>
+                    <div class="offcanvas-footer">
+                        <div class="header_content_height"></div>
+                    </div>
                 </div>
             </div>
         
 
         </nav>
 
-        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button> -->
 
         <div class="offcanvas offcanvas-end bg-transparent" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasprofile"
             aria-labelledby="offcanvasprofileLabel">
-            <div class="offcanvas-header p-0 BgWhitePrimary">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="content d-flex justify-content-between flex-fill"></div>
-                        </div>
-                        <div class="col-12">
-                            <div class="sub_content">
-                                <button class="border-0 bg-transparent w-100">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span></span>
-                                        <span>Profile</span>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
+            <div class="offcanvas-header d-block p-0 BgLightPrimary">
+                <div class="header_content_height"></div>
+                <div class="sub_content">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>Profile</div>
                     </div>
                 </div>
-                <!-- <h5 class="offcanvas-title" id="offcanvasprofileLabel">Ataur Rahman</h5> -->
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
             </div>
             <div class="offcanvas-body">
-                <div class="sub_content mode_switcher rounded-3 bg-primary py-2">
-                    <button class="dark-button border-0 bg-transparent w-100">
+                <div class="sub_content rounded-3 BgLightPrimary mb-3">
+                    <button class="btn dark-button border-0 bg-transparent w-100">
                         <div class="d-flex justify-content-between align-items-center">
                             <span>
                                 <i class="fas fa-moon"></i>
                             </span>
-                            <span>Night Mode</span>
+                            <span class="ColorDarkPrimary">Night Mode</span>
                         </div>
                     </button>
-                    <button class="light-button border-0 bg-transparent w-100">
+                    <button class="btn light-button border-0 bg-transparent w-100">
                         <div class="d-flex justify-content-between align-items-center">
                             <span>
                                 <i class="fas fa-sun"></i>
                             </span>
-                            <span>Day Mode</span>
+                            <span class="ColorDarkPrimary">Day Mode</span>
                         </div>
                     </button>
                 </div>
-                <div class="d-flex align-content-stretch">
-                    <button class="btn theme_btn my-1 w-100" data-bs-toggle="modal" data-bs-target="#login">
+                <div class="d-flex align-content-stretch mx_8">
+                    <button class="btn theme_btn mx-2 w-100" data-bs-toggle="modal" data-bs-target="#login">
                         <div data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasprofile" aria-controls="offcanvasprofile">
                             Login
                         </div>
                     </button>
-                    <button class="btn theme_btn my-1 w-100" data-bs-toggle="modal" data-bs-target="#register">
+                    <button class="btn theme_btn mx-2 w-100" data-bs-toggle="modal" data-bs-target="#register">
                         <div data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasprofile" aria-controls="offcanvasprofile">
                             Register
                         </div>
                     </button>
                 </div>
+            </div>
+            <div class="offcanvas-footer">
+                <div class="header_content_height"></div>
             </div>
         </div>
 
@@ -458,269 +450,73 @@
 
         <div class="offcanvas offcanvas-end bg-transparent" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasinbox"
             aria-labelledby="offcanvasinboxLabel">
-            <div class="offcanvas-header p-0 BgWhitePrimary">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="content d-flex justify-content-between flex-fill"></div>
-                        </div>
-                        <div class="col-12">
-                            <div class="sub_content">
-                                <button class="border-0 bg-transparent w-100">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span></span>
-                                        <span>Messages</span>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
+            <div class="offcanvas-header d-block p-0 BgLightPrimary">
+                <div class="header_content_height"></div>
+                <div class="sub_content">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>Inbox</div>
                     </div>
                 </div>
-                <!-- <h5 class="offcanvas-title" id="offcanvasinboxLabel">Ataur Rahman</h5> -->
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
             </div>
             <div class="offcanvas-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore beatae distinctio exercitationem
-                    temporibus fuga. Delectus id rem alias labore pariatur, sapiente expedita ad, tempore corporis,
-                    harum assumenda repellendus quae saepe? Doloremque similique molestiae veritatis doloribus minus,
-                    voluptas non. Perferendis eos repudiandae sunt laudantium suscipit voluptatem laboriosam iure beatae
-                    expedita ducimus aspernatur ab pariatur fuga iste, sed nostrum nam velit possimus! Rerum nihil id
-                    necessitatibus tempore enim iure laboriosam aliquid expedita delectus sapiente molestiae, modi
-                    corrupti, porro dolor. Nesciunt, repudiandae dignissimos. Est minus modi nihil exercitationem
-                    laborum doloribus quasi ipsa perferendis eligendi, consequatur, veritatis asperiores placeat. Ipsa
-                    porro provident dolorum corporis saepe mollitia molestiae recusandae, facilis molestias tenetur
-                    laboriosam eos quaerat aliquam hic id quisquam, similique voluptatibus quo suscipit ullam repellat
-                    aspernatur dolore amet corrupti. Magni, necessitatibus provident officiis sapiente repellendus iste
-                    minus quia harum excepturi, vitae recusandae illo! Nam doloribus laboriosam sunt autem. Saepe,
-                    eligendi repellat itaque dolor accusantium doloribus accusamus quia cupiditate sed fuga corporis
-                    temporibus illo harum vitae nisi veritatis culpa quo? Veritatis nulla pariatur laudantium, maiores
-                    at adipisci. Quae dicta quam, repellendus inventore voluptas et officia hic similique perspiciatis
-                    doloribus praesentium necessitatibus dolor, minima velit dolorem! Voluptate fugiat, maiores enim eos
-                    fugit dignissimos fuga, possimus tempora consequuntur nemo porro ipsa voluptatibus recusandae
-                    pariatur unde facilis sequi deserunt neque alias aliquid perferendis officiis, iure facere libero.
-                    Itaque maxime dicta vero doloremque atque ipsam numquam iste perferendis quam qui quo eius
-                    voluptatem harum vitae dolor ut error, nam laborum, iure corporis accusantium. Aliquid culpa quam
-                    recusandae ad animi quis labore veniam sequi, consectetur, blanditiis atque mollitia? Perspiciatis
-                    fugit nostrum ratione iste maxime. Porro voluptatum beatae minus sunt, minima, unde rem non aliquid,
-                    laboriosam tempora repellendus debitis neque est recusandae! Culpa, itaque obcaecati libero ducimus
-                    natus reiciendis vero similique? Excepturi nemo laboriosam, facilis animi illo perspiciatis ad
-                    impedit ea nostrum, libero fugiat. Possimus quidem eum temporibus tenetur dolor suscipit magni eius
-                    quo! Nihil delectus inventore animi doloremque consectetur perferendis dignissimos quo dolore est
-                    provident itaque quidem ea ullam cupiditate recusandae incidunt eum voluptatibus ratione, libero
-                    reiciendis necessitatibus fugit. Quaerat error dolorem cumque iusto assumenda repellendus hic,
-                    repudiandae in dicta fuga excepturi nihil earum dolores debitis facere ducimus quas maiores. Iste
-                    animi non labore reprehenderit maxime nihil corporis, harum obcaecati odio accusamus, omnis itaque
-                    laborum minus magni pariatur nisi eos vel quibusdam quidem modi repellendus ipsa mollitia esse.
-                    Nostrum tempore rem doloremque neque sapiente obcaecati quod illo magnam consectetur pariatur libero
-                    enim, eveniet voluptates dolor! Corrupti ad error nulla beatae dicta reiciendis harum expedita
-                    explicabo officiis commodi accusamus eligendi, sit consequuntur qui. Consequatur, dolores eligendi
-                    aut repellat ut minima et cum ipsa numquam assumenda qui voluptate voluptatibus non facere culpa
-                    distinctio tenetur, tempore pariatur sunt quos quibusdam nostrum. Eum magni voluptatem enim
-                    temporibus dolorem voluptatibus rem ratione! Temporibus assumenda modi, dolore debitis beatae quidem
-                    totam, magni voluptatum, dolorem voluptate explicabo optio esse suscipit saepe? Cumque sed, modi
-                    quam dignissimos vitae natus dolorem, ducimus praesentium, quaerat aliquam eum? Sit consequatur
-                    voluptas perspiciatis quis tempore distinctio excepturi et quae? Facilis officiis et facere!</p>
+                
+            </div>
+            <div class="offcanvas-footer">
+                <div class="header_content_height"></div>
             </div>
         </div>
 
         <div class="offcanvas offcanvas-end bg-transparent" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvasnotofication"
             aria-labelledby="offcanvasnotoficationLabel">
-            <div class="offcanvas-header p-0 BgWhitePrimary">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="content d-flex justify-content-between flex-fill"></div>
-                        </div>
-                        <div class="col-12">
-                            <div class="sub_content">
-                                <button class="border-0 bg-transparent w-100">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span></span>
-                                        <span>Notifications</span>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
+            <div class="offcanvas-header d-block p-0 BgLightPrimary">
+                <div class="header_content_height"></div>
+                <div class="sub_content">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>Notification</div>
                     </div>
                 </div>
-                <!-- <h5 class="offcanvas-title" id="offcanvasnotoficationLabel">Ataur Rahman</h5> -->
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
             </div>
             <div class="offcanvas-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore beatae distinctio exercitationem
-                    temporibus fuga. Delectus id rem alias labore pariatur, sapiente expedita ad, tempore corporis,
-                    harum assumenda repellendus quae saepe? Doloremque similique molestiae veritatis doloribus minus,
-                    voluptas non. Perferendis eos repudiandae sunt laudantium suscipit voluptatem laboriosam iure beatae
-                    expedita ducimus aspernatur ab pariatur fuga iste, sed nostrum nam velit possimus! Rerum nihil id
-                    necessitatibus tempore enim iure laboriosam aliquid expedita delectus sapiente molestiae, modi
-                    corrupti, porro dolor. Nesciunt, repudiandae dignissimos. Est minus modi nihil exercitationem
-                    laborum doloribus quasi ipsa perferendis eligendi, consequatur, veritatis asperiores placeat. Ipsa
-                    porro provident dolorum corporis saepe mollitia molestiae recusandae, facilis molestias tenetur
-                    laboriosam eos quaerat aliquam hic id quisquam, similique voluptatibus quo suscipit ullam repellat
-                    aspernatur dolore amet corrupti. Magni, necessitatibus provident officiis sapiente repellendus iste
-                    minus quia harum excepturi, vitae recusandae illo! Nam doloribus laboriosam sunt autem. Saepe,
-                    eligendi repellat itaque dolor accusantium doloribus accusamus quia cupiditate sed fuga corporis
-                    temporibus illo harum vitae nisi veritatis culpa quo? Veritatis nulla pariatur laudantium, maiores
-                    at adipisci. Quae dicta quam, repellendus inventore voluptas et officia hic similique perspiciatis
-                    doloribus praesentium necessitatibus dolor, minima velit dolorem! Voluptate fugiat, maiores enim eos
-                    fugit dignissimos fuga, possimus tempora consequuntur nemo porro ipsa voluptatibus recusandae
-                    pariatur unde facilis sequi deserunt neque alias aliquid perferendis officiis, iure facere libero.
-                    Itaque maxime dicta vero doloremque atque ipsam numquam iste perferendis quam qui quo eius
-                    voluptatem harum vitae dolor ut error, nam laborum, iure corporis accusantium. Aliquid culpa quam
-                    recusandae ad animi quis labore veniam sequi, consectetur, blanditiis atque mollitia? Perspiciatis
-                    fugit nostrum ratione iste maxime. Porro voluptatum beatae minus sunt, minima, unde rem non aliquid,
-                    laboriosam tempora repellendus debitis neque est recusandae! Culpa, itaque obcaecati libero ducimus
-                    natus reiciendis vero similique? Excepturi nemo laboriosam, facilis animi illo perspiciatis ad
-                    impedit ea nostrum, libero fugiat. Possimus quidem eum temporibus tenetur dolor suscipit magni eius
-                    quo! Nihil delectus inventore animi doloremque consectetur perferendis dignissimos quo dolore est
-                    provident itaque quidem ea ullam cupiditate recusandae incidunt eum voluptatibus ratione, libero
-                    reiciendis necessitatibus fugit. Quaerat error dolorem cumque iusto assumenda repellendus hic,
-                    repudiandae in dicta fuga excepturi nihil earum dolores debitis facere ducimus quas maiores. Iste
-                    animi non labore reprehenderit maxime nihil corporis, harum obcaecati odio accusamus, omnis itaque
-                    laborum minus magni pariatur nisi eos vel quibusdam quidem modi repellendus ipsa mollitia esse.
-                    Nostrum tempore rem doloremque neque sapiente obcaecati quod illo magnam consectetur pariatur libero
-                    enim, eveniet voluptates dolor! Corrupti ad error nulla beatae dicta reiciendis harum expedita
-                    explicabo officiis commodi accusamus eligendi, sit consequuntur qui. Consequatur, dolores eligendi
-                    aut repellat ut minima et cum ipsa numquam assumenda qui voluptate voluptatibus non facere culpa
-                    distinctio tenetur, tempore pariatur sunt quos quibusdam nostrum. Eum magni voluptatem enim
-                    temporibus dolorem voluptatibus rem ratione! Temporibus assumenda modi, dolore debitis beatae quidem
-                    totam, magni voluptatum, dolorem voluptate explicabo optio esse suscipit saepe? Cumque sed, modi
-                    quam dignissimos vitae natus dolorem, ducimus praesentium, quaerat aliquam eum? Sit consequatur
-                    voluptas perspiciatis quis tempore distinctio excepturi et quae? Facilis officiis et facere!</p>
+                
+            </div>
+            <div class="offcanvas-footer">
+                <div class="header_content_height"></div>
             </div>
         </div>
 
         <div class="offcanvas offcanvas-end bg-transparent" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvascart"
             aria-labelledby="offcanvascartLabel">
-            <div class="offcanvas-header p-0 BgWhitePrimary">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="content d-flex justify-content-between flex-fill"></div>
-                        </div>
-                        <div class="col-12">
-                            <div class="sub_content">
-                                <button class="border-0 bg-transparent w-100">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span></span>
-                                        <span>Cart</span>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
+            <div class="offcanvas-header d-block p-0 BgLightPrimary">
+                <div class="header_content_height"></div>
+                <div class="sub_content">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>Cart</div>
                     </div>
                 </div>
-                <!-- <h5 class="offcanvas-title" id="offcanvascartLabel">Ataur Rahman</h5> -->
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
             </div>
             <div class="offcanvas-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore beatae distinctio exercitationem
-                    temporibus fuga. Delectus id rem alias labore pariatur, sapiente expedita ad, tempore corporis,
-                    harum assumenda repellendus quae saepe? Doloremque similique molestiae veritatis doloribus minus,
-                    voluptas non. Perferendis eos repudiandae sunt laudantium suscipit voluptatem laboriosam iure beatae
-                    expedita ducimus aspernatur ab pariatur fuga iste, sed nostrum nam velit possimus! Rerum nihil id
-                    necessitatibus tempore enim iure laboriosam aliquid expedita delectus sapiente molestiae, modi
-                    corrupti, porro dolor. Nesciunt, repudiandae dignissimos. Est minus modi nihil exercitationem
-                    laborum doloribus quasi ipsa perferendis eligendi, consequatur, veritatis asperiores placeat. Ipsa
-                    porro provident dolorum corporis saepe mollitia molestiae recusandae, facilis molestias tenetur
-                    laboriosam eos quaerat aliquam hic id quisquam, similique voluptatibus quo suscipit ullam repellat
-                    aspernatur dolore amet corrupti. Magni, necessitatibus provident officiis sapiente repellendus iste
-                    minus quia harum excepturi, vitae recusandae illo! Nam doloribus laboriosam sunt autem. Saepe,
-                    eligendi repellat itaque dolor accusantium doloribus accusamus quia cupiditate sed fuga corporis
-                    temporibus illo harum vitae nisi veritatis culpa quo? Veritatis nulla pariatur laudantium, maiores
-                    at adipisci. Quae dicta quam, repellendus inventore voluptas et officia hic similique perspiciatis
-                    doloribus praesentium necessitatibus dolor, minima velit dolorem! Voluptate fugiat, maiores enim eos
-                    fugit dignissimos fuga, possimus tempora consequuntur nemo porro ipsa voluptatibus recusandae
-                    pariatur unde facilis sequi deserunt neque alias aliquid perferendis officiis, iure facere libero.
-                    Itaque maxime dicta vero doloremque atque ipsam numquam iste perferendis quam qui quo eius
-                    voluptatem harum vitae dolor ut error, nam laborum, iure corporis accusantium. Aliquid culpa quam
-                    recusandae ad animi quis labore veniam sequi, consectetur, blanditiis atque mollitia? Perspiciatis
-                    fugit nostrum ratione iste maxime. Porro voluptatum beatae minus sunt, minima, unde rem non aliquid,
-                    laboriosam tempora repellendus debitis neque est recusandae! Culpa, itaque obcaecati libero ducimus
-                    natus reiciendis vero similique? Excepturi nemo laboriosam, facilis animi illo perspiciatis ad
-                    impedit ea nostrum, libero fugiat. Possimus quidem eum temporibus tenetur dolor suscipit magni eius
-                    quo! Nihil delectus inventore animi doloremque consectetur perferendis dignissimos quo dolore est
-                    provident itaque quidem ea ullam cupiditate recusandae incidunt eum voluptatibus ratione, libero
-                    reiciendis necessitatibus fugit. Quaerat error dolorem cumque iusto assumenda repellendus hic,
-                    repudiandae in dicta fuga excepturi nihil earum dolores debitis facere ducimus quas maiores. Iste
-                    animi non labore reprehenderit maxime nihil corporis, harum obcaecati odio accusamus, omnis itaque
-                    laborum minus magni pariatur nisi eos vel quibusdam quidem modi repellendus ipsa mollitia esse.
-                    Nostrum tempore rem doloremque neque sapiente obcaecati quod illo magnam consectetur pariatur libero
-                    enim, eveniet voluptates dolor! Corrupti ad error nulla beatae dicta reiciendis harum expedita
-                    explicabo officiis commodi accusamus eligendi, sit consequuntur qui. Consequatur, dolores eligendi
-                    aut repellat ut minima et cum ipsa numquam assumenda qui voluptate voluptatibus non facere culpa
-                    distinctio tenetur, tempore pariatur sunt quos quibusdam nostrum. Eum magni voluptatem enim
-                    temporibus dolorem voluptatibus rem ratione! Temporibus assumenda modi, dolore debitis beatae quidem
-                    totam, magni voluptatum, dolorem voluptate explicabo optio esse suscipit saepe? Cumque sed, modi
-                    quam dignissimos vitae natus dolorem, ducimus praesentium, quaerat aliquam eum? Sit consequatur
-                    voluptas perspiciatis quis tempore distinctio excepturi et quae? Facilis officiis et facere!</p>
+                
+            </div>
+            <div class="offcanvas-footer">
+                <div class="header_content_height"></div>
             </div>
         </div>
 
         <div class="offcanvas offcanvas-end bg-transparent" data-bs-scroll="false" data-bs-backdrop="true" tabindex="-1" id="offcanvascollection"
             aria-labelledby="offcanvascollectionLabel">
-            <div class="offcanvas-header p-0 BgWhitePrimary">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="content d-flex justify-content-between flex-fill"></div>
-                        </div>
-                        <div class="col-12">
-                            <div class="sub_content">
-                                <button class="border-0 bg-transparent w-100">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span></span>
-                                        <span>Collections</span>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
+            <div class="offcanvas-header d-block p-0 BgLightPrimary">
+                <div class="header_content_height"></div>
+                <div class="sub_content">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>Collection</div>
                     </div>
                 </div>
-                <!-- <h5 class="offcanvas-title" id="offcanvascollectionLabel">Ataur Rahman</h5> -->
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
             </div>
             <div class="offcanvas-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore beatae distinctio exercitationem
-                    temporibus fuga. Delectus id rem alias labore pariatur, sapiente expedita ad, tempore corporis,
-                    harum assumenda repellendus quae saepe? Doloremque similique molestiae veritatis doloribus minus,
-                    voluptas non. Perferendis eos repudiandae sunt laudantium suscipit voluptatem laboriosam iure beatae
-                    expedita ducimus aspernatur ab pariatur fuga iste, sed nostrum nam velit possimus! Rerum nihil id
-                    necessitatibus tempore enim iure laboriosam aliquid expedita delectus sapiente molestiae, modi
-                    corrupti, porro dolor. Nesciunt, repudiandae dignissimos. Est minus modi nihil exercitationem
-                    laborum doloribus quasi ipsa perferendis eligendi, consequatur, veritatis asperiores placeat. Ipsa
-                    porro provident dolorum corporis saepe mollitia molestiae recusandae, facilis molestias tenetur
-                    laboriosam eos quaerat aliquam hic id quisquam, similique voluptatibus quo suscipit ullam repellat
-                    aspernatur dolore amet corrupti. Magni, necessitatibus provident officiis sapiente repellendus iste
-                    minus quia harum excepturi, vitae recusandae illo! Nam doloribus laboriosam sunt autem. Saepe,
-                    eligendi repellat itaque dolor accusantium doloribus accusamus quia cupiditate sed fuga corporis
-                    temporibus illo harum vitae nisi veritatis culpa quo? Veritatis nulla pariatur laudantium, maiores
-                    at adipisci. Quae dicta quam, repellendus inventore voluptas et officia hic similique perspiciatis
-                    doloribus praesentium necessitatibus dolor, minima velit dolorem! Voluptate fugiat, maiores enim eos
-                    fugit dignissimos fuga, possimus tempora consequuntur nemo porro ipsa voluptatibus recusandae
-                    pariatur unde facilis sequi deserunt neque alias aliquid perferendis officiis, iure facere libero.
-                    Itaque maxime dicta vero doloremque atque ipsam numquam iste perferendis quam qui quo eius
-                    voluptatem harum vitae dolor ut error, nam laborum, iure corporis accusantium. Aliquid culpa quam
-                    recusandae ad animi quis labore veniam sequi, consectetur, blanditiis atque mollitia? Perspiciatis
-                    fugit nostrum ratione iste maxime. Porro voluptatum beatae minus sunt, minima, unde rem non aliquid,
-                    laboriosam tempora repellendus debitis neque est recusandae! Culpa, itaque obcaecati libero ducimus
-                    natus reiciendis vero similique? Excepturi nemo laboriosam, facilis animi illo perspiciatis ad
-                    impedit ea nostrum, libero fugiat. Possimus quidem eum temporibus tenetur dolor suscipit magni eius
-                    quo! Nihil delectus inventore animi doloremque consectetur perferendis dignissimos quo dolore est
-                    provident itaque quidem ea ullam cupiditate recusandae incidunt eum voluptatibus ratione, libero
-                    reiciendis necessitatibus fugit. Quaerat error dolorem cumque iusto assumenda repellendus hic,
-                    repudiandae in dicta fuga excepturi nihil earum dolores debitis facere ducimus quas maiores. Iste
-                    animi non labore reprehenderit maxime nihil corporis, harum obcaecati odio accusamus, omnis itaque
-                    laborum minus magni pariatur nisi eos vel quibusdam quidem modi repellendus ipsa mollitia esse.
-                    Nostrum tempore rem doloremque neque sapiente obcaecati quod illo magnam consectetur pariatur libero
-                    enim, eveniet voluptates dolor! Corrupti ad error nulla beatae dicta reiciendis harum expedita
-                    explicabo officiis commodi accusamus eligendi, sit consequuntur qui. Consequatur, dolores eligendi
-                    aut repellat ut minima et cum ipsa numquam assumenda qui voluptate voluptatibus non facere culpa
-                    distinctio tenetur, tempore pariatur sunt quos quibusdam nostrum. Eum magni voluptatem enim
-                    temporibus dolorem voluptatibus rem ratione! Temporibus assumenda modi, dolore debitis beatae quidem
-                    totam, magni voluptatum, dolorem voluptate explicabo optio esse suscipit saepe? Cumque sed, modi
-                    quam dignissimos vitae natus dolorem, ducimus praesentium, quaerat aliquam eum? Sit consequatur
-                    voluptas perspiciatis quis tempore distinctio excepturi et quae? Facilis officiis et facere!</p>
+                
+            </div>
+            <div class="offcanvas-footer">
+                <div class="header_content_height"></div>
             </div>
         </div>
 

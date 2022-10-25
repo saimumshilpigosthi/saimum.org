@@ -159,7 +159,7 @@ $(document).ready(function () {
     // OFFCANVUS RIGHT PANEL JS END
 
 
-    $(".search_icon_mini .search_icon").click(function () {
+    $(".search_icon_tab .search_icon").click(function () {
         $(".search_bar_mini").addClass("active");
     });
     $(".search_cancel_mini .cancel_icon").click(function () {
