@@ -131,8 +131,8 @@ $(document).ready(function () {
         $(".offcanvas-header .content").css("padding-right", body_padding);
         $(".offcanvas-header .sub_content").css("padding-right", body_padding);
         
-        // var header_left_width = $("header .body_left").width();
-        var header_left_width = 275;
+        var header_left_width = $("header .body_left").width();
+        // var header_left_width = 275;
 
         var string = body_padding;
         var body_padding = string.match(/\d/g);
@@ -157,8 +157,6 @@ $(document).ready(function () {
     });
 
     // OFFCANVUS RIGHT PANEL JS END
-
-
     $(".search_icon_tab .search_icon").click(function () {
         $(".search_bar_mini").addClass("active");
     });
@@ -171,6 +169,10 @@ $(document).ready(function () {
         $(".offcanvas-backdrop").click();
     });
 
+
+    // Color picker js start 
+    
+    // Color picker js end 
 
 
 

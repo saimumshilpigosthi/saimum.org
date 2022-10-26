@@ -32,7 +32,9 @@
 
     
     --ColorDarkPrimary: rgb(33, 33, 33);
-    --ColorDarkSecondary: rgb(68, 68, 68);
+    --ColorDarkSecondary: rgb(43, 43, 43);
+    /* --ColorDarkSecondary: rgb(68, 68, 68); 
+    previous color  */
     --ColorDarkExtra: hwb(0 47% 53%);
     
     /* theme colors  */
@@ -503,6 +505,11 @@ table tbody{
 /*Section Title CSS End*/
 
 
+.mx_3 {
+	margin-left: -3px;
+	margin-right: -3px;
+}
 .mx_8{
-    margin: 0 -8px;
+    margin-left: -8px;
+    margin-right: -8px;
 }

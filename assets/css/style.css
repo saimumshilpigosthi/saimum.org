@@ -33,13 +33,8 @@
 .offcanvas {
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
-	background: rgba(255, 255, 255, 0.6) !important;
     transition: .3s linear;
 }
-body.dark .offcanvas{
-background: rgba(0, 0, 0, 0.6) !important;
-}
-
 .sub_content div {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -173,9 +168,6 @@ body.dark .navbar .offcanvas-header::before {
 .body_left .navbar{
     box-shadow: none;
 }
-.navbar.submenu {
-    z-index: 999999;
-}
 .navbar .nav-item .nav-link{
     text-transform: uppercase;
     font-weight: 700;
@@ -224,7 +216,9 @@ body.dark .navbar .nav-item .nav-link:hover{
     border: none;
     width: auto !important;
     margin-top: 0px !important;
-    border-radius: 5px !important;
+    border-radius: 0;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
     overflow: hidden;
     transition: .3s linear;
 }
@@ -235,6 +229,9 @@ body.dark .dropdown-menu {
     text-transform: capitalize;
     padding: 7px 10px;
     position: relative;
+    color: var(--ColorDarkSecondary);
+}
+body.dark .dropdown-menu .dropdown-item{
     color: var(--ColorLightSecondary) !important;
 }
 .dropdown-menu .dropdown-item:hover{
