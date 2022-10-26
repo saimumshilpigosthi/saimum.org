@@ -35,10 +35,10 @@
     --ColorDarkSecondary: rgb(43, 43, 43);
     /* --ColorDarkSecondary: rgb(68, 68, 68); 
     previous color  */
-    --ColorDarkExtra: hwb(0 47% 53%);
+    --ColorDarkExtra: rgb(120, 120, 120);
     
     /* theme colors  */
-    --ColorPrimary: #FF790E;
+    --ColorPrimary: rgb(255, 121, 14);
     --ColorPrimaryAlpha: rgba(141, 106, 29, 0.6);
     --ColorSecondary: #23232D;
     
@@ -59,6 +59,7 @@
 /* font colors  */
 .ColorLightPrimary{
     color: var(--ColorLightPrimary) !important;
+    transition: .3s linear;
 }
 body.dark .ColorLightPrimary{
     color: var(--ColorDarkPrimary) !important;
@@ -66,6 +67,7 @@ body.dark .ColorLightPrimary{
 
 .ColorLightSecondary {
     color: var(--ColorLightSecondary) !important;
+    transition: .3s linear;
 }
 body.dark .ColorLightSecondary {
     color: var(--ColorDarkSecondary) !important;
@@ -73,6 +75,7 @@ body.dark .ColorLightSecondary {
 
 .ColorDarkPrimary {
     color: var(--ColorDarkPrimary) !important;
+    transition: .3s linear;
 }
 body.dark .ColorDarkPrimary {
     color: var(--ColorLightPrimary) !important;
@@ -80,6 +83,7 @@ body.dark .ColorDarkPrimary {
 
 .ColorDarkSecondary {
     color: var(--ColorDarkSecondary) !important;
+    transition: .3s linear;
 }
 body.dark .ColorDarkSecondary {
     color: var(--ColorLightSecondary) !important;
@@ -89,6 +93,7 @@ body.dark .ColorDarkSecondary {
 /* background colors  */
 .BgDarkPrimary {
     background: var(--ColorDarkPrimary) !important;
+    transition: .3s linear;
 }
 body.dark .BgDarkPrimary {
     background: var(--ColorLightPrimary) !important;
@@ -96,12 +101,14 @@ body.dark .BgDarkPrimary {
 
 .BgDarkSecondary {
     background: var(--ColorDarkSecondary) !important;
+    transition: .3s linear;
 }
 body.dark .BgDarkSecondary {
     background: var(--ColorLightSecondary) !important;
 }
 .BgLightPrimary {
     background: var(--ColorLightPrimary) !important;
+    transition: .3s linear;
 }
 body.dark .BgLightPrimary {
     background: var(--ColorDarkPrimary) !important;
@@ -109,6 +116,7 @@ body.dark .BgLightPrimary {
 
 .BgLightSecondary {
     background: var(--ColorLightSecondary) !important;
+    transition: .3s linear;
 }
 body.dark .BgLightSecondary {
     background: var(--ColorDarkSecondary) !important;
@@ -188,18 +196,7 @@ svg {
 body.dark svg {
   color: var(--ColorLightPrimary);
 }
-body.dark header,
-body.dark nav {
-  background-color: var(--ColorDarkPrimary);
-  
-}
-header,
-nav {
-  background-color: var(--ColorLightPrimary);
-  /* -webkit-transition: background-color 800ms ease;
-  transition: background-color 800ms ease; */
-  transition: .3s linear;
-}
+
 
 body.dark .form-control{
     background-color: var(--ColorDarkSecondary);
@@ -305,7 +302,7 @@ img {
 
 .overlay_inner {
     /* background: var(--overlayColor); */
-    background: rgba(114, 166, 130, 0.3);
+    /* background: rgb(255, 121, 14, 0.3); */
     width: 100%;
     height: 100%;
 }
@@ -324,6 +321,10 @@ img {
     color: var(--themeWhite) !important;
     background: var(--themeColor) !important;
 } */
+
+.Page_banner{
+    min-height: 200px;
+}
 
 .preloader {
     position: fixed;
@@ -406,8 +407,8 @@ section{
     margin-top: 30px;
 }
 .title_wrap > h2 {
-    padding-top: 8px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 	position: relative;
 	text-transform: uppercase;
 }
@@ -487,7 +488,23 @@ table tbody{
 
 
 
-
+/* breadcumb area  */
+.breadcumb_area nav {
+	background: none !important;
+}
+.breadcrumb {
+	margin-bottom: 0 !important;
+}
+.breadcrumb .breadcrumb-item{
+    padding: 12px 10px 12px 0;
+}
+.breadcrumb .breadcrumb-item a{
+    color: var(--ColorDarkPrimary);
+}
+body.dark .breadcrumb .breadcrumb-item a{
+    color: var(--ColorLightPrimary) !important;
+}
+/* breadcumb area  */
 
 
 

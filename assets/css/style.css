@@ -75,6 +75,17 @@
 }
 
 
+body.dark header,
+body.dark nav {
+  background-color: var(--ColorDarkPrimary);
+  
+}
+header,
+nav {
+  background-color: var(--ColorLightPrimary);
+  transition: .3s linear;
+}
+
 header, .search_bar_mini {
     border-bottom: 1px solid #ced4da;;
 }
@@ -175,6 +186,7 @@ body.dark .navbar .offcanvas-header::before {
     position: relative;
     white-space: nowrap;
     color: var(--ColorDarkPrimary);
+    /* font-size: 16px !important; */
 }
 body.dark .navbar .nav-item .nav-link{
     color: var(--ColorLightPrimary);
@@ -226,13 +238,18 @@ body.dark .dropdown-menu {
     background: var(--ColorDarkPrimary);
 }
 .dropdown-menu .dropdown-item{
-    text-transform: capitalize;
+    text-transform: uppercase;
     padding: 7px 10px;
     position: relative;
     color: var(--ColorDarkSecondary);
+    font-size: 14px !important;
 }
 body.dark .dropdown-menu .dropdown-item{
     color: var(--ColorLightSecondary) !important;
+}
+.dropdown-menu .dropdown-item.active{
+    background: var(--ColorPrimary);
+    color: var(--ColorLightPrimary);
 }
 .dropdown-menu .dropdown-item:hover{
     background: var(--ColorPrimary);
@@ -363,6 +380,17 @@ body.dark .dropdown-menu .dropdown-item{
 
 
 /* DEPARTMENT CSS END  */
+
+
+
+
+/* WATCH VIDEO AREA CSS START  */
+.video_side, 
+.content_side{
+    height: calc(100vh - 100px); 
+    overflow-y: scroll;
+}
+/* WATCH VIDEO AREA CSS END  */
 
 
 
