@@ -223,5 +223,80 @@ $(document).ready(function () {
     // Color picker js end 
 
 
+    //Sticky video side js Start
+    $(".video_side").on('scroll', function () {
+        var scrollAmount = $(".video_side").scrollTop();
+        var sticky = $(".video").height();
+        var content_height = $(".video_content").height()
+
+        if (scrollAmount > sticky) {
+            $(".video_content").addClass("mini_view");
+            var sticky_height = $(".video_content").height();
+            $(".medium_gap").css("padding-top", Number(content_height) - 100);
+            $(".video_side").removeClass("pt-3");
+        } 
+        else {
+            $(".video_content").removeClass("mini_view");
+            $(".medium_gap").css("padding-top", "0");
+            $(".video_side").addClass("pt-3");
+        }
+    });
+    //Sticky video side js Ends
+
+    // Sticky Sub Menu Js Start 
+    var topNavHeight = $(".top-navbar").height();
+    $("nav.submenu").css('top', topNavHeight);
+    // note: for nav tag there parent are position=relative 
+
+    // scroll on hover js 
+    $('#right-hover-scroll').click(function() {
+        event.preventDefault();
+        $('.scroll_menu').animate({
+            scrollLeft: "+=100%"
+        }, "slow");
+    });
+        
+    $('#left-hover-scroll').click(function() {
+        event.preventDefault();
+        $('.scroll_menu').animate({
+            scrollLeft: "-=100%"
+        }, "slow");
+    });
+
+
+    var scroll_menuNavWidth = $(".scroll_menu").width();
+    var scroll_menuWidth = $(".scroll_menu .navbar-nav").width();
+
+    if (scroll_menuWidth >= scroll_menuNavWidth) {
+        $(".scroll_btn").removeClass("d-none");
+    } else {
+        $(".scroll_btn").addClass("d-none");
+    }
+
+    // Sticky Sub Menu Js End 
+
+
+    
+
+
 
 });
+
+//my content js start
+$(function () {
+    $('.content_btn').on('click', function () {
+        $('.content_btn').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+function openContent(Content) {
+    var i, content_item;
+    content_item = document.getElementsByClassName("content_item");
+    for (i = 0; i < content_item.length; i++) {
+        content_item[i].style.display = "none";
+    }
+    document.getElementById(Content).style.display = "block";
+}
+document.getElementById("active_content").click();
+//my content js ends
+
