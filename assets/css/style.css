@@ -390,6 +390,11 @@ body.dark .dropdown-menu .dropdown-item{
 .content_side{
     height: calc(100vh - 100px); 
     overflow-y: scroll;
+    /* transition: .3s linear; */
+}
+.video_side{
+    scrollbar-width: none;
+    transition: .3s linear;
 }
 
 .video_content{
@@ -400,27 +405,37 @@ body.dark .dropdown-menu .dropdown-item{
     display: flex;
     position: sticky;
     top: 0;
+    z-index: 99;
     transition: .3s linear;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+    border-top: 1px solid #ced4da;
 }
-.video_content.mini_view .video{
-    width: 178px;
+.video_content.mini_view .video {
+    width: 350px;
+	/* width: 180px !important; */
+	/* flex-shrink: 0; */
 }
-.video_content.mini_view .content{
-    width: calc(100% - 178px);
+.video_content.mini_view .video_action{
+    margin-top: auto;
 }
-
 .video_content .video_title{
     font-size: 18px;
     font-weight: 500;
     line-height: 25px;
     padding: 5px 0;
-    transition: .3s linear;
+    /* transition: .3s linear; */
 }
-/* .video_content.mini_view .video_title{
-    font-size: 16px;
-    line-height: 20px;
+.video_content.mini_view .video_title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+            line-clamp: 1; 
+    -webkit-box-orient: vertical;
     padding: 5px 10px;
-} */
+}
 
 
 
@@ -460,6 +475,9 @@ body.dark .navbar.submenu .nav-item .nav-link.active {
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none;
+}
+.scroll_btn{
+    cursor: pointer;
 }
 .watch_video_area .single_content{
     border: none;

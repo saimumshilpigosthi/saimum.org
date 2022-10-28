@@ -53,8 +53,38 @@
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 479px) {
-    
-    
+    .video_side, 
+    .content_side{
+        height: auto !important;
+        overflow-y: visible;
+    }
+    /* .video_content.mini_view{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999999;
+    }
+    .video_content.mini_view .video {
+        width: 100%;
+    } */
+    .video_side .video_details{
+        display: none;
+    }
+    .video_action .header_shortcut{
+        width: 30px;
+        height: 30px;
+    }
+    .video_content .video_title{
+        font-size: 16px;
+    }
+    .video_side{
+        background: var(--ColorLightPrimary);
+        position: sticky !important;
+        top: 0;
+        z-index: 99;
+        transition: .3s linear;
+    }
 }
 
 @media (max-width: 575px) {
@@ -72,11 +102,19 @@
         width: auto;
     }
 
-    .video_side, 
-    .content_side{
-        height: auto !important;
-        overflow-y: visible;
+    .video_side.phone_view{
+        background: var(--ColorLightPrimary);
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999999;
+        transition: .3s linear;
+        padding-top: 0 !important;
+        transition: .3s linear;
     }
+
+    
 
     
     

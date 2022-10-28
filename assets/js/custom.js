@@ -241,6 +241,31 @@ $(document).ready(function () {
             $(".video_side").addClass("pt-3");
         }
     });
+
+    $(window).on('scroll', function () {
+        var scrollAmount = $(window).scrollTop();
+
+        if (scrollAmount > 75) {
+            $(".video_side").addClass("phone_view");
+            $(".video_title").slideUp("slow", function () {
+                $(".video_title").hide();
+            });
+            $(".content_action").removeClass("pt-3");
+            var content_action = $(".content_action").html();
+            $(".content_action_phone").html(content_action);
+            var video_height = $(".video_side").height();
+            $(".content_side").css("padding-top", video_height);
+        } 
+        else {
+            $(".video_side").removeClass("phone_view");
+            $(".video_title").slideDown("slow", function () {
+                $(".video_title").show();
+            });
+            $(".content_action").addClass("pt-3");
+            $(".content_action_phone").html("");
+            $(".content_side").css("padding-top", "0");
+        }
+    });
     //Sticky video side js Ends
 
     // Sticky Sub Menu Js Start 
@@ -273,6 +298,11 @@ $(document).ready(function () {
         $(".scroll_btn").addClass("d-none");
     }
 
+    var scroll_menu = document.querySelector(".navbar .scroll_menu .nav-link.active");
+    // scroll_menu.scrollIntoView({behavior: "smooth" ,inline: "center"});
+    // scroll_menu.scrollIntoView({inline: "center"});
+    // scroll_menu.scrollIntoView({behavior: "smooth"});
+
     // Sticky Sub Menu Js End 
 
 
@@ -287,7 +317,9 @@ $(function () {
     $('.content_btn').on('click', function () {
         $('.content_btn').removeClass('active');
         $(this).addClass('active');
-    });
+        var scroll_menu = document.querySelector(".navbar .scroll_menu .nav-link.active");
+            scroll_menu.scrollIntoView({behavior: "smooth" ,inline: "center"});
+        });
 });
 function openContent(Content) {
     var i, content_item;
@@ -299,4 +331,7 @@ function openContent(Content) {
 }
 document.getElementById("active_content").click();
 //my content js ends
+
+
+// scroll on click js 
 
