@@ -250,7 +250,7 @@ $(document).ready(function () {
             $(".video_title").slideUp("slow", function () {
                 $(".video_title").hide();
             });
-            $(".content_action").removeClass("pt-3");
+            $(".content_action").hide();
             var content_action = $(".content_action").html();
             $(".content_action_phone").html(content_action);
             var video_height = $(".video_side").height();
@@ -261,7 +261,7 @@ $(document).ready(function () {
             $(".video_title").slideDown("slow", function () {
                 $(".video_title").show();
             });
-            $(".content_action").addClass("pt-3");
+            $(".content_action").show();
             $(".content_action_phone").html("");
             $(".content_side").css("padding-top", "0");
         }

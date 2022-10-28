@@ -230,6 +230,9 @@ p {
     color: var(--ColorDarkSecondary);
     margin-bottom: 15px;
 }
+body.dark p {
+    color: var(--ColorLightSecondary);
+}
 
 ul,
 ol {
