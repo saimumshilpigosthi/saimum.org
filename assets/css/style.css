@@ -369,7 +369,7 @@ body.dark .dropdown-menu .dropdown-item{
 }
 .single_content:hover{
     box-shadow: none;
-    border: 2px solid var(--ColorPrimary);
+    border: 1px solid var(--ColorPrimary);
 }
 .single_content .overlay_pos div a {
 	position: absolute;
@@ -414,9 +414,9 @@ body.dark .dropdown-menu .dropdown-item{
     border-bottom: 1px solid #ced4da;
 }
 .video_content.mini_view .video {
-    width: 348px;
+    width: 176px;
+    flex: 1 0 auto;
 	/* width: 180px !important; */
-	/* flex-shrink: 0; */
 }
 .video_content.mini_view .video_action{
     margin-top: auto;
@@ -481,8 +481,16 @@ body.dark .navbar.submenu .nav-item .nav-link.active {
     cursor: pointer;
 }
 .watch_video_area .single_content{
-    border: none;
-    padding: 0;
+    /* border: none;
+    padding: 0; */
+}
+.single_content .title{
+    padding: 5px 10px;
+}
+.single_content .title h6{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
 }
 /* WATCH VIDEO AREA CSS END  */
 

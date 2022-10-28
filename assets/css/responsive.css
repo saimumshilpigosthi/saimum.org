@@ -69,7 +69,14 @@
         width: 100%;
     } */
     .video_side .video_details{
-        display: none;
+        background: red;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        overflow: scroll;
+        height: 200px;
+
     }
     .video_action .header_shortcut{
         width: 30px;

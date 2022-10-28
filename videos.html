@@ -560,9 +560,11 @@
                                         width="560" height="314" style="border:none;overflow:hidden" scrolling="yes"
                                         frameborder="0" allowfullscreen="true" allowFullScreen="true"></iframe>
                                     <!-- <iframe src="https://www.boomplay.com/embed/97735540/MUSIC?colType=5&colID=52033309" width="100%" height="420" frameborder="0"></iframe> -->
+                                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/fer3VrpoHgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                                        <!-- <iframe style="" src="https://open.spotify.com/embed/track/66ubcwpH3srIQq0khnVrK9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
                                 </div>
-                                <div class="content d-flex flex-column BgLightPrimary ">
-                                    <h1 class="video_title truncate-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <div class="content d-flex flex-column BgLightPrimary">
+                                    <h1 class="video_title truncate-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Eveniet, repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Odio, voluptatem!
                                     </h1>
@@ -585,6 +587,9 @@
                                             <div class="header_shortcut" data-bs-toggle="offcanvas"
                                                 data-bs-target="#offcanvasinbox" aria-controls="offcanvasinbox">
                                                 <i class="fa fa-bars"></i>
+                                            </div>
+                                            <div class="header_shortcut video_details_toggler">
+                                                <i class="fa fa-angle-double-down"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -612,21 +617,21 @@
                                         <div class="collapse navbar-collapse scroll_menu">
                                             <ul class="navbar-nav m-auto mb-lg-0">
                                                 <li class="nav-item">
-                                                    <a class="nav-link content_btn"
-                                                        onclick="openContent('NextVideo_Content')">Album</a>
+                                                    <a class="nav-link content_btn active" id="active_content"
+                                                        onclick="openContent('Album_Content')">Album</a>
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link content_btn"
                                                         onclick="openContent('Comments_Content')">Comments</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link content_btn" id="active_content"
+                                                    <a class="nav-link content_btn"
                                                     onclick="openContent('Lyrics_Content')"
                                                     aria-current="page">Lyrics</a>
                                                 </li>
                                                 <li class="nav-item">
-                                                    <a class="nav-link content_btn active"
-                                                        onclick="openContent('Comments_Content')">Related</a>
+                                                    <a class="nav-link content_btn"
+                                                        onclick="openContent('Related_Content')">Related</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -642,79 +647,94 @@
                                 <div class="content_wrap">
 
                                     <div id="Lyrics_Content" class="content_item">
-                                        <div class="single_content">
-                                            <div class="section_content" style="margin-top: 0">
-                                                <div class="container-fluid p-0">
-                                                    <div class="row justify-content-center">
-                                                        <div class="col-sm-6 col-md-4 col-lg-3">
-                                                            <div class="single_content">
-                                                                <div class="img_holder rounded overflow-hidden">
-                                                                    <img src="https://saimum.org/wp-content/uploads/2021/09/2022-01.jpg" alt="" class="w-100">
+                                        <div class="single_content border-0">
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non perspiciatis inventore dolorum porro, dolor placeat mollitia, officiis maxime ipsam accusamus, architecto at amet reiciendis facilis. Magnam, odit. Dolorum enim praesentium, laboriosam maiores qui reprehenderit voluptatum accusantium doloremque id iste labore cum, vel laudantium numquam! Expedita delectus dicta laborum, minima obcaecati nisi quibusdam consectetur tempore optio dolorum necessitatibus praesentium assumenda debitis eos vel ea alias nulla omnis commodi et, vitae possimus architecto. Atque natus, accusantium incidunt molestias ipsum magnam ad numquam obcaecati minima laboriosam deleniti saepe similique nostrum consequatur a quo harum odio est fugiat ratione. Odit aspernatur molestiae facere officia cupiditate cumque ipsum magni, iure est eius beatae porro consequuntur natus magnam laboriosam praesentium fugiat. Alias quis laboriosam odit obcaecati consectetur nobis numquam ipsum aliquid labore repudiandae est, omnis reprehenderit minus, fugiat cupiditate dolorum dolores soluta odio, sequi accusamus doloremque. Cum distinctio exercitationem cupiditate reprehenderit, dolorem commodi laboriosam natus aliquid magni beatae atque nulla quis, culpa laudantium doloribus reiciendis quas! Est facilis officiis, perferendis earum, nisi dolores minima sapiente, eligendi mollitia at animi eos asperiores consequatur quae dicta deleniti veniam corporis obcaecati! Iure, accusamus a inventore ipsa totam iusto doloremque harum quisquam corrupti cupiditate quaerat dolor. Libero eum aperiam tempore.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div id="Comments_Content" class="content_item">
+                                        <div class="single_content p-0 border-0">
+                                            <div class="d-flex align-items-start">
+                                                <div class="ratio ratio-1x1 rounded-circle overflow-hidden bg-danger" style="width: 50px; height: 50px; flex: 1 0 auto;">
+                                                    <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                </div>
+                                                <div class="p-2">
+                                                    <div>
+                                                        <h6 class="truncate-1 mb-3">Ataur Rahman</h6>
+                                                        <p class="" style="line-height: 18px; font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi maiores dolorum optio delectus perferendis quo error, ullam enim magnam labore.</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="d-flex align-items-start">
+                                                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden bg-danger" style="width: 50px; height: 50px; flex: 1 0 auto;">
+                                                                <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                            </div>
+                                                            <div class="p-2">
+                                                                <div>
+                                                                    <h6 class="truncate-1 mb-3">Ataur Rahman</h6>
+                                                                    <p class="" style="line-height: 18px; font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi maiores dolorum optio delectus perferendis quo error, ullam enim magnam labore.</p>
                                                                 </div>
-                                                                <div class="overlay_pos d-flex justify-content-center">
-                                                                    <div class="d-flex justify-content-center h-100 w-100 position-relative">
-                                                                        <a class="rounded-pill" href="index.html"></a>
-                                                                    </div>
+                                                                <div>
+                                                                    
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 col-md-4 col-lg-3">
-                                                            <div class="single_content">
-                                                                <div class="img_holder rounded overflow-hidden">
-                                                                    <img src="https://saimum.org/wp-content/uploads/2021/09/2022-02.jpg" alt="" class="w-100">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_content p-0 border-0">
+                                            <div class="d-flex align-items-start">
+                                                <div class="ratio ratio-1x1 rounded-circle overflow-hidden bg-danger" style="width: 50px; height: 50px; flex: 1 0 auto;">
+                                                    <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                </div>
+                                                <div class="p-2">
+                                                    <div>
+                                                        <h6 class="truncate-1 mb-3">Ataur Rahman</h6>
+                                                        <p class="" style="line-height: 18px; font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi maiores dolorum optio delectus perferendis quo error, ullam enim magnam labore.</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="d-flex align-items-start">
+                                                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden bg-danger" style="width: 50px; height: 50px; flex: 1 0 auto;">
+                                                                <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                            </div>
+                                                            <div class="p-2">
+                                                                <div>
+                                                                    <h6 class="truncate-1 mb-3">Ataur Rahman</h6>
+                                                                    <p class="" style="line-height: 18px; font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi maiores dolorum optio delectus perferendis quo error, ullam enim magnam labore.</p>
                                                                 </div>
-                                                                <div class="overlay_pos d-flex justify-content-center">
-                                                                    <div class="d-flex justify-content-center h-100 w-100 position-relative">
-                                                                        <a class="rounded-pill" href="index.html"></a>
-                                                                    </div>
+                                                                <div>
+                                                                    
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-sm-6 col-md-4 col-lg-3">
-                                                            <div class="single_content">
-                                                                <div class="img_holder rounded overflow-hidden">
-                                                                    <img src="https://saimum.org/wp-content/uploads/2021/09/2022-02.jpg" alt="" class="w-100">
-                                                                </div>
-                                                                <div class="overlay_pos d-flex justify-content-center">
-                                                                    <div class="d-flex justify-content-center h-100 w-100 position-relative">
-                                                                        <a class="rounded-pill" href="index.html"></a>
-                                                                    </div>
-                                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_content p-0 border-0">
+                                            <div class="d-flex align-items-start">
+                                                <div class="ratio ratio-1x1 rounded-circle overflow-hidden bg-danger" style="width: 50px; height: 50px; flex: 1 0 auto;">
+                                                    <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                </div>
+                                                <div class="p-2">
+                                                    <div>
+                                                        <h6 class="truncate-1 mb-3">Ataur Rahman</h6>
+                                                        <p class="" style="line-height: 18px; font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi maiores dolorum optio delectus perferendis quo error, ullam enim magnam labore.</p>
+                                                    </div>
+                                                    <div>
+                                                        <div class="d-flex align-items-start">
+                                                            <div class="ratio ratio-1x1 rounded-circle overflow-hidden bg-danger" style="width: 50px; height: 50px; flex: 1 0 auto;">
+                                                                <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
                                                             </div>
-                                                        </div>
-                                                        <div class="col-sm-6 col-md-4 col-lg-3">
-                                                            <div class="single_content">
-                                                                <div class="img_holder rounded overflow-hidden">
-                                                                    <img src="https://saimum.org/wp-content/uploads/2021/09/2022-02.jpg" alt="" class="w-100">
+                                                            <div class="p-2">
+                                                                <div>
+                                                                    <h6 class="truncate-1 mb-3">Ataur Rahman</h6>
+                                                                    <p class="" style="line-height: 18px; font-size: 14px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi maiores dolorum optio delectus perferendis quo error, ullam enim magnam labore.</p>
                                                                 </div>
-                                                                <div class="overlay_pos d-flex justify-content-center">
-                                                                    <div class="d-flex justify-content-center h-100 w-100 position-relative">
-                                                                        <a class="rounded-pill" href="index.html"></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6 col-md-4 col-lg-3">
-                                                            <div class="single_content">
-                                                                <div class="img_holder rounded overflow-hidden">
-                                                                    <img src="https://saimum.org/wp-content/uploads/2021/09/2022-02.jpg" alt="" class="w-100">
-                                                                </div>
-                                                                <div class="overlay_pos d-flex justify-content-center">
-                                                                    <div class="d-flex justify-content-center h-100 w-100 position-relative">
-                                                                        <a class="rounded-pill" href="index.html"></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-6 col-md-4 col-lg-3">
-                                                            <div class="single_content">
-                                                                <div class="img_holder rounded overflow-hidden">
-                                                                    <img src="https://saimum.org/wp-content/uploads/2021/09/2022-02.jpg" alt="" class="w-100">
-                                                                </div>
-                                                                <div class="overlay_pos d-flex justify-content-center">
-                                                                    <div class="d-flex justify-content-center h-100 w-100 position-relative">
-                                                                        <a class="rounded-pill" href="index.html"></a>
-                                                                    </div>
+                                                                <div>
+                                                                    
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -724,19 +744,184 @@
                                         </div>
                                     </div>
 
-                                    <div id="Comments_Content" class="content_item">
-                                        <div class="single_content">
-                                            <p>
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur voluptatem illum adipisci earum ad ut non! Deleniti, nostrum ea? Laborum facilis labore vero ut tenetur enim cupiditate nesciunt minus doloribus ex? Voluptates fugiat dolorem facilis? Natus, reprehenderit officia exercitationem eum, corporis iste tempora, doloremque ea quas magnam maiores veniam! Reiciendis rem officiis ab, explicabo vero illo, consequatur quod a impedit laudantium excepturi illum reprehenderit libero iste nostrum. Est recusandae nostrum placeat aliquid tenetur voluptatem sint enim eius explicabo ex, consequuntur quam doloremque at tempore earum pariatur eos quae, expedita necessitatibus? Dignissimos fugit inventore dolorum error! Consequuntur iure fugit placeat ipsam similique. Vel architecto culpa labore, quod soluta enim hic illum ipsa unde recusandae et velit, aliquid, corrupti facilis expedita totam? Similique earum maiores consectetur nihil ducimus unde ipsum repellendus cumque explicabo, modi laudantium maxime excepturi voluptatibus obcaecati et? Enim illum neque molestias cum, quae aspernatur minus similique deleniti deserunt officiis voluptates ea harum! Repellat modi commodi culpa iure nobis ratione quo, sapiente tempore veniam consequuntur consequatur odio harum repellendus sunt, amet velit delectus. Distinctio natus hic, at, in ratione delectus unde deleniti doloremque a temporibus, accusamus voluptatem molestiae? Qui recusandae natus maxime delectus similique reprehenderit voluptas soluta! Itaque, ipsa possimus?
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div id="NextVideo_Content" class="content_item">
+                                    <div id="Related_Content" class="content_item">
                                         <div class="single_content">
                                             <p>
                                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non perspiciatis inventore dolorum porro, dolor placeat mollitia, officiis maxime ipsam accusamus, architecto at amet reiciendis facilis. Magnam, odit. Dolorum enim praesentium, laboriosam maiores qui reprehenderit voluptatum accusantium doloremque id iste labore cum, vel laudantium numquam! Expedita delectus dicta laborum, minima obcaecati nisi quibusdam consectetur tempore optio dolorum necessitatibus praesentium assumenda debitis eos vel ea alias nulla omnis commodi et, vitae possimus architecto. Atque natus, accusantium incidunt molestias ipsum magnam ad numquam obcaecati minima laboriosam deleniti saepe similique nostrum consequatur a quo harum odio est fugiat ratione. Odit aspernatur molestiae facere officia cupiditate cumque ipsum magni, iure est eius beatae porro consequuntur natus magnam laboriosam praesentium fugiat. Alias quis laboriosam odit obcaecati consectetur nobis numquam ipsum aliquid labore repudiandae est, omnis reprehenderit minus, fugiat cupiditate dolorum dolores soluta odio, sequi accusamus doloremque. Cum distinctio exercitationem cupiditate reprehenderit, dolorem commodi laboriosam natus aliquid magni beatae atque nulla quis, culpa laudantium doloribus reiciendis quas! Est facilis officiis, perferendis earum, nisi dolores minima sapiente, eligendi mollitia at animi eos asperiores consequatur quae dicta deleniti veniam corporis obcaecati! Iure, accusamus a inventore ipsa totam iusto doloremque harum quisquam corrupti cupiditate quaerat dolor. Libero eum aperiam tempore.
                                             </p>
+                                        </div>
+                                    </div>
+                                    <div id="Album_Content" class="content_item">
+                                        <div class="single_content p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="ratio ratio-16x9">
+                                                        <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="d-flex flex-column" style="margin-top: auto;">
+                                                        <div class="title">
+                                                            <h6 class="truncate-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel!</h6>
+                                                        </div>
+                                                        <div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_content p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="ratio ratio-16x9">
+                                                        <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="d-flex flex-column" style="margin-top: auto;">
+                                                        <div class="title">
+                                                            <h6 class="truncate-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel!</h6>
+                                                        </div>
+                                                        <div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_content p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="ratio ratio-16x9">
+                                                        <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="d-flex flex-column" style="margin-top: auto;">
+                                                        <div class="title">
+                                                            <h6 class="truncate-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel!</h6>
+                                                        </div>
+                                                        <div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_content p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="ratio ratio-16x9">
+                                                        <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="d-flex flex-column" style="margin-top: auto;">
+                                                        <div class="title">
+                                                            <h6 class="truncate-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel!</h6>
+                                                        </div>
+                                                        <div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_content p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="ratio ratio-16x9">
+                                                        <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="d-flex flex-column" style="margin-top: auto;">
+                                                        <div class="title">
+                                                            <h6 class="truncate-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel!</h6>
+                                                        </div>
+                                                        <div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_content p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="ratio ratio-16x9">
+                                                        <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="d-flex flex-column" style="margin-top: auto;">
+                                                        <div class="title">
+                                                            <h6 class="truncate-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel!</h6>
+                                                        </div>
+                                                        <div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_content p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="ratio ratio-16x9">
+                                                        <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="d-flex flex-column" style="margin-top: auto;">
+                                                        <div class="title">
+                                                            <h6 class="truncate-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel!</h6>
+                                                        </div>
+                                                        <div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_content p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="ratio ratio-16x9">
+                                                        <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="d-flex flex-column" style="margin-top: auto;">
+                                                        <div class="title">
+                                                            <h6 class="truncate-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel!</h6>
+                                                        </div>
+                                                        <div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single_content p-0">
+                                            <div class="row g-0">
+                                                <div class="col-md-4">
+                                                    <div class="ratio ratio-16x9">
+                                                        <img src="https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss-450x300.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <div class="d-flex flex-column" style="margin-top: auto;">
+                                                        <div class="title">
+                                                            <h6 class="truncate-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel!</h6>
+                                                        </div>
+                                                        <div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
