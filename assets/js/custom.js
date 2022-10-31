@@ -1,3 +1,8 @@
+// $(window).on('resize', function(){
+//     window.location.reload(true);
+
+// });
+
 //Preloader js Start
 $(window).on('load', function () {
     // $('.preloader').delay(1000).fadeOut();
@@ -242,32 +247,68 @@ $(document).ready(function () {
         }
     });
 
-    $(window).on('scroll', function () {
-        var scrollAmount = $(window).scrollTop();
 
-        if (scrollAmount > 77) {
-            $(".video_side").addClass("phone_view");
-            $(".video_title").slideUp("slow", function () {
-                $(".video_title").hide();
-            });
-            $(".content_action").hide();
-            // $(".content_action").css({"opacity": "0", "visibility": "hidden"});
-            var content_action = $(".content_action").html();
-            $(".content_action_phone").html(content_action);
-            var video_height = $(".video_side").height();
-            $(".content_side").css("padding-top", video_height);
-        } 
-        else {
-            $(".video_side").removeClass("phone_view");
-            $(".video_title").slideDown("slow", function () {
-                $(".video_title").show();
-            });
-            $(".content_action").show();
-            // $(".content_action").css({"opacity": "1", "visibility": "visiable"});
-            $(".content_action_phone").html("");
-            $(".content_side").css("padding-top", "0");
-        }
-    });
+    var md = window.matchMedia( "(max-width: 575px)" );
+    var sm = window.matchMedia( "(max-width: 400px)" );
+    var video_height = $(".video_content").height();
+    if (md.matches) {
+        $(window).on('scroll', function () {
+            var scrollAmount = $(window).scrollTop();
+            var sticky = $(".video").height();
+            var header = $("header").height();
+            console.log(scrollAmount);
+
+            if (scrollAmount > sticky) {
+                $(".video_content").addClass("mini_view").css("margin-top", header);
+                $(".content_side").css("padding-top", video_height - header);
+                // $(".medium_gap").css("padding-top", header);
+                
+                $(".content_action .submenu").addClass("mini_view");
+
+                var action_btn_ht = $(".content_action .submenu").height();
+                $(".content_wrap").css("padding-top", action_btn_ht);
+            } 
+            else {
+                $(".video_content").removeClass("mini_view").css("margin-top", "auto");
+                $(".content_side").css("padding-top", "0")
+                // $(".medium_gap").css("padding-top", "0");
+                $(".content_action .submenu").removeClass("mini_view");
+
+                $(".content_wrap").css("padding-top", "0");
+            }
+        });
+    }
+    else if(sm.match) {
+        $(window).on('scroll', function () {
+            var scrollAmount = $(window).scrollTop();
+            var sticky = $(".video").height();
+            var header = $("header").height();
+            var sticky = Number(sticky);
+            // alert(sticky);
+
+            if (scrollAmount > sticky) {
+
+                $(".video_side").addClass("phone_view");
+                $(".video_title").slideUp("slow", function () {
+                    $(".video_title").hide();
+                });
+                $(".content_action").hide();
+            } 
+            else {
+
+                $(".video_side").removeClass("phone_view");
+                $(".video_title").slideDown("slow", function () {
+                    $(".video_title").show();
+                });
+                $(".content_action").show();
+            }
+        });
+    }
+
+        
+    
+
+    
     //Sticky video side js Ends
 
     // Sticky Sub Menu Js Start 
@@ -314,10 +355,11 @@ $(document).ready(function () {
         $(".scroll_btn").addClass("d-none");
     }
 
-    $(".video_details").slideDown();
-    $(".video_details_toggler").click(function(){
-        $(".video_details").slideToggle();
-    });
+    $(".video_details").toggle();
+    // $(".video_details").slideUp();
+    // $(".video_details_toggler").click(function(){
+    //     $(".video_details").slideToggle();
+    // });
 
     
 

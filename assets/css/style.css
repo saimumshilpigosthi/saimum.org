@@ -2,6 +2,7 @@
 .modal-backdrop{
     z-index: 999999;
     /* background: transparent; */
+    backdrop-filter: blur(10px);
 }
 
 .modal{
@@ -28,7 +29,8 @@
 /* OFFCANVUS PANELS CSS START  */
 .offcanvas-backdrop{
     z-index: 9;
-    background: transparent;
+    /* background: transparent; */
+    /* backdrop-filter: blur(10px); */
 }
 .offcanvas {
 	-webkit-backdrop-filter: blur(10px);
@@ -441,6 +443,7 @@ body.dark .dropdown-menu .dropdown-item{
 
 
 
+
 .content_action{
     position: sticky;
     top: 0;
@@ -491,6 +494,11 @@ body.dark .navbar.submenu .nav-item .nav-link.active {
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
+}
+
+
+.video_details_action_btn_phone{
+    display: none;
 }
 /* WATCH VIDEO AREA CSS END  */
 
